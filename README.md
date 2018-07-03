@@ -1,2 +1,1 @@
 # swp-blog
-SSM+Maven
