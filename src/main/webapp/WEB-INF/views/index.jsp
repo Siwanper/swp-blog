@@ -11,6 +11,6 @@
     <title>hello</title>
 </head>
 <body>
-    Hello world
+    ${name}
 </body>
 </html>

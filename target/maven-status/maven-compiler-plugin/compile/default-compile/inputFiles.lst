@@ -1,1 +1,4 @@
-/Users/shiwanpeng/Documents/workspace/swp-blog/src/main/java/com/swp/module/product/controller/ProductController.java
+/Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/module/product/mapper/TbProductMapper.java
+/Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/module/product/controller/ProductController.java
+/Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/module/product/model/TbProductExample.java
+/Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/module/product/model/TbProduct.java

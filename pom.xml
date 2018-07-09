@@ -211,9 +211,7 @@
                 <version>9.4.8.v20171121</version>
                 <configuration>
                     <scanIntervalSeconds>0</scanIntervalSeconds>
-                    <webAppConfig>
-                        <contextPath>/swp-blog</contextPath>
-                    </webAppConfig>
+
                     <httpConnector>
                         <port>8888</port>
                     </httpConnector>

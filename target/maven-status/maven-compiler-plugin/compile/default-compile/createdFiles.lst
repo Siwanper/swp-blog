@@ -1,0 +1,7 @@
+com/swp/module/product/model/TbProductExample$Criteria.class
+com/swp/module/product/model/TbProduct.class
+com/swp/module/product/mapper/TbProductMapper.class
+com/swp/module/product/controller/ProductController.class
+com/swp/module/product/model/TbProductExample.class
+com/swp/module/product/model/TbProductExample$GeneratedCriteria.class
+com/swp/module/product/model/TbProductExample$Criterion.class
