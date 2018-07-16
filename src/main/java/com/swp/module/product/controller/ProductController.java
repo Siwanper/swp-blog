@@ -19,7 +19,7 @@ public class ProductController {
     public String index(Model model){
         TbProduct tbProduct = mapper.selectByPrimaryKey("1ba6d11d2639401ebf63c00c5ae7c2a0");
         model.addAttribute("name",tbProduct.getProductName());
-        return "index";
+        return "login";
     }
 
 }

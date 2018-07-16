@@ -167,6 +167,27 @@
             <version>5.1.45</version>
         </dependency>
 
+        <!-- 添加 jackson 依赖包 -->
+        <!-- 包含 jackson-annotations-2.9.3.jar、 jackson-core-2.9.3.jar、
+            jackson-databind-2.9.3.jar -->
+        <!--
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
         <!-- 添加servlet 依赖包 -->
         <dependency>
             <groupId>javax.servlet</groupId>
