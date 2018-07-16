@@ -2,436 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c502d6-7e6a-45a6-91a2-3a6adbe8039b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/login/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/log.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/global.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/BootstrapMenu.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/angular/angular-1.5.8/angular-animate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/angular/angular-1.5.8/angular-aria.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/angular/angular-1.5.8/angular-locale_zh-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/angular/angular-1.5.8/angular-messages.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/angular/angular-1.5.8/angular.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/angular/angular-material-1.1.1/angular-material.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/angular/angular-material-1.1.1/angular-material.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/awesome-bootstrap-checkbox/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-3.3.7-dist/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/css/bootstrap-datetimepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/css/bootstrap-datetimepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/bootstrap-datetimepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/bootstrap-datetimepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.ar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.az.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.bg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.bn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.ee.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.hr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.hy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.is.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.ka.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.lv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.ms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.nb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.no.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.pt-BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.rs-latin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.rs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.sl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.sw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.th.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.ua.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.uk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-datetimepicker-dist/js/locales/bootstrap-datetimepicker.zh-TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/css/bootstrap-select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/css/bootstrap-select.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/css/bootstrap-select.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/bootstrap-select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/bootstrap-select.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/bootstrap-select.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-ar_AR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-ar_AR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-bg_BG.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-bg_BG.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-cro_CRO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-cro_CRO.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-cs_CZ.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-cs_CZ.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-da_DK.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-da_DK.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-de_DE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-de_DE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-en_US.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-en_US.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-es_CL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-es_CL.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-es_ES.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-es_ES.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-et_EE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-et_EE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-eu.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-fa_IR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-fa_IR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-fi_FI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-fi_FI.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-fr_FR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-fr_FR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-hu_HU.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-hu_HU.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-id_ID.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-id_ID.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-it_IT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-it_IT.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-ja_JP.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-ja_JP.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-kh_KM.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-kh_KM.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-ko_KR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-ko_KR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-lt_LT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-lt_LT.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-nb_NO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-nb_NO.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-nl_NL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-nl_NL.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-pl_PL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-pl_PL.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-pt_BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-pt_BR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-pt_PT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-pt_PT.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-ro_RO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-ro_RO.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-ru_RU.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-ru_RU.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-sk_SK.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-sk_SK.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-sl_SI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-sl_SI.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-sv_SE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-sv_SE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-tr_TR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-tr_TR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-ua_UA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-ua_UA.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-vi_VN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-vi_VN.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-zh_CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-zh_CN.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-zh_TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/js/i18n/defaults-zh_TW.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/bootstrap-table-locale-all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/bootstrap-table-locale-all.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/bootstrap-table.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/bootstrap-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/bootstrap-table.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/bootstrap-table.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/angular/bootstrap-table-angular.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/angular/bootstrap-table-angular.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/auto-refresh/bootstrap-table-auto-refresh.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/auto-refresh/bootstrap-table-auto-refresh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/auto-refresh/bootstrap-table-auto-refresh.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/click-edit-row/bootstrap-table-click-edit-row.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/click-edit-row/bootstrap-table-click-edit-row.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/click-edit-row/bootstrap-table-click-edit-row.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/cookie/bootstrap-table-cookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/cookie/bootstrap-table-cookie.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/copy-rows/bootstrap-table-copy-rows.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/copy-rows/bootstrap-table-copy-rows.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/editable/bootstrap-table-editable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/editable/bootstrap-table-editable.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/export/bootstrap-table-export.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/export/bootstrap-table-export.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/filter-control/bootstrap-table-filter-control.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/filter-control/bootstrap-table-filter-control.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/filter-control/bootstrap-table-filter-control.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/filter/bootstrap-table-filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/filter/bootstrap-table-filter.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/flat-json/bootstrap-table-flat-json.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/flat-json/bootstrap-table-flat-json.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/group-by-v2/bootstrap-table-group-by.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/group-by-v2/bootstrap-table-group-by.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/group-by-v2/bootstrap-table-group-by.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/group-by/bootstrap-table-group-by.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/group-by/bootstrap-table-group-by.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/group-by/bootstrap-table-group-by.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/i18n-enhance/bootstrap-table-i18n-enhance.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/i18n-enhance/bootstrap-table-i18n-enhance.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/key-events/bootstrap-table-key-events.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/key-events/bootstrap-table-key-events.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/mobile/bootstrap-table-mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/mobile/bootstrap-table-mobile.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/multi-column-toggle/bootstrap-table-multi-toggle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/multi-column-toggle/bootstrap-table-multi-toggle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/multiple-search/bootstrap-table-multiple-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/multiple-search/bootstrap-table-multiple-search.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/multiple-sort/bootstrap-table-multiple-sort.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/multiple-sort/bootstrap-table-multiple-sort.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/natural-sorting/bootstrap-table-natural-sorting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/natural-sorting/bootstrap-table-natural-sorting.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/print/bootstrap-table-print.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/print/bootstrap-table-print.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/reorder-columns/bootstrap-table-reorder-columns.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/reorder-columns/bootstrap-table-reorder-columns.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/reorder-rows/bootstrap-table-reorder-rows.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/reorder-rows/bootstrap-table-reorder-rows.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/reorder-rows/bootstrap-table-reorder-rows.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/resizable/bootstrap-table-resizable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/resizable/bootstrap-table-resizable.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/select2-filter/bootstrap-table-select2-filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/select2-filter/bootstrap-table-select2-filter.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/sticky-header/bootstrap-table-sticky-header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/sticky-header/bootstrap-table-sticky-header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/sticky-header/bootstrap-table-sticky-header.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/toolbar/bootstrap-table-toolbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/toolbar/bootstrap-table-toolbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/tree-column/bootstrap-table-tree-column.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/tree-column/bootstrap-table-tree-column.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/extensions/tree-column/bootstrap-table-tree-column.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-af-ZA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-af-ZA.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ar-SA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ar-SA.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ca-ES.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ca-ES.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-cs-CZ.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-cs-CZ.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-da-DK.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-da-DK.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-de-DE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-de-DE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-el-GR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-el-GR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-en-US.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-en-US.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-es-AR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-es-AR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-es-CL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-es-CL.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-es-CR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-es-CR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-es-ES.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-es-ES.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-es-MX.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-es-MX.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-es-NI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-es-NI.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-es-SP.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-es-SP.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-et-EE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-et-EE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-fa-IR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-fa-IR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-fr-BE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-fr-BE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-fr-FR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-fr-FR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-he-IL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-he-IL.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-hr-HR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-hr-HR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-hu-HU.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-hu-HU.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-id-ID.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-id-ID.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-it-IT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-it-IT.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ja-JP.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ja-JP.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ka-GE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ka-GE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ko-KR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ko-KR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ms-MY.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ms-MY.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-nb-NO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-nb-NO.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-nl-NL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-nl-NL.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-pl-PL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-pl-PL.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-pt-BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-pt-BR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-pt-PT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-pt-PT.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ro-RO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ro-RO.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ru-RU.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ru-RU.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-sk-SK.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-sk-SK.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-sv-SE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-sv-SE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-th-TH.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-th-TH.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-tr-TR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-tr-TR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-uk-UA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-uk-UA.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ur-PK.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-ur-PK.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-uz-Latn-UZ.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-uz-Latn-UZ.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-vi-VN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-vi-VN.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-zh-CN.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-zh-TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/locale/bootstrap-table-zh-TW.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrapvalidator-0.5.3-dist/css/bootstrapValidator.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrapvalidator-0.5.3-dist/css/bootstrapValidator.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrapvalidator-0.5.3-dist/js/bootstrapValidator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrapvalidator-0.5.3-dist/js/bootstrapValidator.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrapvalidator-0.5.3-dist/js/language/en_US.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrapvalidator-0.5.3-dist/js/language/zh_CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/device.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/font-awesome-4.7.0-dist/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/font-awesome-4.7.0-dist/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/font-awesome-4.7.0-dist/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/font-awesome-4.7.0-dist/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/font-awesome-4.7.0-dist/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/font-awesome-4.7.0-dist/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/font-awesome-4.7.0-dist/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/font-awesome-4.7.0-dist/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/css/iconpicker.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/css/iconpicker.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/css/iconpicker.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/css/iconpicker.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/css/jquery.fonticonpicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/css/jquery.fonticonpicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/js/jquery.fonticonpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/js/jquery.fonticonpicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/themes/bootstrap-theme/jquery.fonticonpicker.bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/themes/bootstrap-theme/jquery.fonticonpicker.bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/themes/dark-grey-theme/jquery.fonticonpicker.darkgrey.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/themes/dark-grey-theme/jquery.fonticonpicker.darkgrey.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/themes/grey-theme/jquery.fonticonpicker.grey.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/themes/grey-theme/jquery.fonticonpicker.grey.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/themes/inverted-theme/jquery.fonticonpicker.inverted.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fontIconPicker-2.0.0-dist/themes/inverted-theme/jquery.fonticonpicker.inverted.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.fullpage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.fullpage.extensions.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.fullpage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.fullpage.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.fullpage.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.fullpage.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.fullpage.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.jdirk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/jquery-3.2.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/jquery-confirm-3.3.0-dist/jquery-confirm.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/jquery-confirm-3.3.0-dist/jquery-confirm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/jquery.cookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/malihu-custom-scrollbar-plugin/mCSB_buttons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/material-design-iconic-font-2.2.0-dist/css/material-design-iconic-font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/material-design-iconic-font-2.2.0-dist/css/material-design-iconic-font.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/material-design-iconic-font-2.2.0-dist/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/material-design-iconic-font-2.2.0-dist/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/material-design-iconic-font-2.2.0-dist/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/material-design-iconic-font-2.2.0-dist/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/material-design-iconic-font-2.2.0-dist/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/waves-0.7.5-dist/waves.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/waves-0.7.5-dist/waves.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/waves-0.7.5-dist/waves.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/waves-0.7.5-dist/waves.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/waves-0.7.5-dist/waves.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/awesomeStyle/awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/awesomeStyle/awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/awesomeStyle/fa.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/awesomeStyle/img/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/metroStyle/img/line_conn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/metroStyle/img/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/metroStyle/img/metro.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/metroStyle/img/metro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/metroStyle/metroStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/zTreeStyle/img/diy/1_close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/zTreeStyle/img/diy/1_open.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/zTreeStyle/img/diy/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/zTreeStyle/img/diy/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/zTreeStyle/img/diy/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/zTreeStyle/img/diy/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/zTreeStyle/img/diy/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/zTreeStyle/img/diy/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/zTreeStyle/img/diy/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/zTreeStyle/img/diy/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/zTreeStyle/img/line_conn.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/zTreeStyle/img/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/zTreeStyle/img/zTreeStandard.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/zTreeStyle/img/zTreeStandard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/css/zTreeStyle/zTreeStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.all.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.core.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.excheck.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.excheck.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.exedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.exedit.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.exhide.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.exhide.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/swp_blog_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/swp_blog_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swp/module/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swp/module/product/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/config/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/config/spring-mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swp-blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/swp-blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/css/bootstrap-select.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/css/bootstrap-select.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/css/bootstrap-select.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-select-1.12.4-dist/css/bootstrap-select.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/device.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/device.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.fullpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.fullpage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.fullpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.fullpage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.fullpage.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.fullpage.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.fullpage.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/fullPage-dist/jquery.fullpage.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/material-design-iconic-font-2.2.0-dist/css/material-design-iconic-font.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/material-design-iconic-font-2.2.0-dist/css/material-design-iconic-font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/material-design-iconic-font-2.2.0-dist/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/material-design-iconic-font-2.2.0-dist/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.all.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.core.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.core.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.core.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.excheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.excheck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.excheck.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.excheck.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.exedit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.exedit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.exedit.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.exedit.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.exhide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.exhide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.exhide.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/plugins/zTree_v3-3.5.26-dist/js/jquery.ztree.exhide.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/spring/config/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/config/spring-mybatis.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" afterDir="false" />
@@ -471,11 +61,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="712">
               <caret line="65" column="16" lean-forward="true" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/common/global.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -521,15 +120,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" selection-start-line="2" selection-end-line="201" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="82" column="11" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="82" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -591,11 +181,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/common/global.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/login.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/swp/commons/login/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/common/global.jsp" />
       </list>
     </option>
   </component>
@@ -634,7 +224,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1116" />
@@ -748,6 +338,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
@@ -873,7 +471,7 @@
       <workItem from="1531140323956" duration="6959000" />
       <workItem from="1531149554273" duration="201000" />
       <workItem from="1531624131843" duration="10135000" />
-      <workItem from="1531750766134" duration="4695000" />
+      <workItem from="1531750766134" duration="5042000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1531149749898</created>
@@ -882,11 +480,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531149749899</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="siwanper:login">
+      <created>1531757056287</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1531757056287</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21990000" />
+    <option name="totallyTimeSpent" value="22337000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -898,7 +503,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-38" y="23" width="1116" height="829" extended-state="0" />
+    <frame x="85" y="25" width="1116" height="829" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -941,7 +546,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="siwanper:login" />
+    <option name="LAST_COMMIT_MESSAGE" value="siwanper:login" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1067,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/global.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -1172,6 +771,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="712">
           <caret line="65" column="16" lean-forward="true" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/global.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
