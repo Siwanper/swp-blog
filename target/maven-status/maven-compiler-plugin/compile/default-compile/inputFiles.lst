@@ -1,4 +1,15 @@
+/Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/user/model/SysUserExample.java
 /Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/module/product/mapper/TbProductMapper.java
 /Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/module/product/controller/ProductController.java
 /Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/module/product/model/TbProductExample.java
+/Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/user/mapper/SysUserMapper.java
+/Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/core/injector/MapperInjector.java
+/Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/core/annotation/MapperInject.java
+/Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/login/model/LoginUser.java
+/Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/login/model/LoginModel.java
+/Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/core/model/PageModel.java
 /Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/module/product/model/TbProduct.java
+/Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/user/model/SysUserKey.java
+/Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/login/controller/LoginController.java
+/Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/user/model/SysUser.java
+/Users/shiwanpeng/Documents/GitHub/swp-blog/src/main/java/com/swp/core/persistence/DelegateMapper.java

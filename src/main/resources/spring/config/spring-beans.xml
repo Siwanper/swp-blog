@@ -14,7 +14,8 @@
 		http://www.springframework.org/schema/tx
 		http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
 
-
+    <!-- 使用自定义注解 @MapperInject 注入mapper对象  -->
+    <bean id="mapper" class="com.swp.core.injector.MapperInjector"/>
 
 
 

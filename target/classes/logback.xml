@@ -146,23 +146,23 @@
     </appender>
 
     <!--日志异步到数据库 -->
-    <!--<appender name="DB" class="ch.qos.logback.classic.db.DBAppender">-->
-        <!--<filter class="ch.qos.logback.classic.filter.LevelFilter">-->
-            <!--<level>WARN</level>-->
-            <!--<onMatch>ACCEPT</onMatch>-->
-            <!--<onMismatch>DENY</onMismatch>-->
-        <!--</filter>-->
-        <!--&lt;!&ndash;日志异步到数据库 &ndash;&gt;-->
-        <!--<connectionSource class="ch.qos.logback.core.db.DataSourceConnectionSource">-->
-            <!--&lt;!&ndash;连接池 &ndash;&gt;-->
-            <!--<dataSource class="com.mchange.v2.c3p0.ComboPooledDataSource">-->
-                <!--<url>${default.db.url}</url>-->
-                <!--<username>${default.db.username}</username>-->
-                <!--<password>${default.db.password}</password>-->
-                <!--<driverClassName>${default.db.driverClassName}</driverClassName>-->
-            <!--</dataSource>-->
-        <!--</connectionSource>-->
-    <!--</appender>-->
+    <appender name="DB" class="ch.qos.logback.classic.db.DBAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <!--日志异步到数据库 -->
+        <connectionSource class="ch.qos.logback.core.db.DataSourceConnectionSource">
+            <!--连接池 -->
+            <dataSource class="com.alibaba.druid.pool.DruidDataSource">
+                <url>${default.db.url}</url>
+                <username>${default.db.username}</username>
+                <password>${default.db.password}</password>
+                <driverClassName>${default.db.driverClassName}</driverClassName>
+            </dataSource>
+        </connectionSource>
+    </appender>
 
     <!-- 打印 sql 配置 -->
     <logger name="java.sql.Connection" level="DEBUG"/>
@@ -196,7 +196,7 @@
         <appender-ref ref="DEBUG"/>
         <appender-ref ref="TRACE"/>
         <!-- 数据库输出 -->
-        <!--<appender-ref ref="DB"/>-->
+        <appender-ref ref="DB"/>
     </root>
 
 </configuration>

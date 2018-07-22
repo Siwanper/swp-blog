@@ -8,15 +8,16 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 
     <!-- 1.配置数据源 -->
-    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-        <property name="user" value="${default.db.username}"/>
-        <property name="password" value="${default.db.password}"/>
-        <property name="driverClass" value="${default.db.driverClassName}"/>
-        <property name="jdbcUrl" value="${default.db.url}"/>
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="username" value="${default.db.username}" />
+        <property name="password" value="${default.db.password}" />
+        <property name="driverClassName" value="${default.db.driverClassName}" />
+        <property name="url" value="${default.db.url}" />
 
-        <property name="minPoolSize" value="5" />
-        <property name="maxPoolSize" value="20" />
-        <property name="initialPoolSize" value="10" />
+        <!-- 配置初始化大小、最小、最大 -->
+        <property name="initialSize" value="${db.initialSize}" />
+        <property name="minIdle" value="${db.minIdle}" />
+        <property name="maxActive" value="${db.maxActive}" />
     </bean>
 
     <!-- 2.SqlSessionFactory -->
@@ -24,7 +25,6 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="mapperLocations">
             <list>
-                <value>classpath:com/swp/**/*Mapper.xml</value>
                 <value>classpath:mybatis/**/*Mapper.xml</value>
             </list>
         </property>

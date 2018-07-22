@@ -1,16 +1,16 @@
 <%--
   Created by IntelliJ IDEA.
   User: shiwanpeng
-  Date: 2018/7/3
-  Time: 下午9:27
+  Date: 2018/7/15
+  Time: 下午12:59
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>hello</title>
+    <title>网络错误</title>
 </head>
 <body>
-    ${name}
+    网络错误404
 </body>
 </html>

@@ -69,6 +69,17 @@
                    remember : $("#remember").is("checked")
                },
                function(data){
+                   if (data.status == 0){
+                       $.alert(data.msg);
+                   } else {
+                       if (data.remember){
+                           var loginCookie = $("#username")+","+$("#password")+","+$("#remember").is("checked");
+                           $.cookie("loginCookie",loginCookie);
+                       } else {
+                           $.cookie("loginCookie",null);
+                       }
+                       window.location.href = "${pageContext.request.contextPath}"+data.url;
+                   }
 
                }
            );

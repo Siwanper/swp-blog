@@ -9,17 +9,17 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("product")
+@RequestMapping("/product")
 public class ProductController {
 
     @Autowired
-    private TbProductMapper mapper;
+    private TbProductMapper productMapper;
 
-    @RequestMapping("index")
+    @RequestMapping("/index")
     public String index(Model model){
-        TbProduct tbProduct = mapper.selectByPrimaryKey("1ba6d11d2639401ebf63c00c5ae7c2a0");
+        TbProduct tbProduct = productMapper.selectByPrimaryKey("1ba6d11d2639401ebf63c00c5ae7c2a0");
         model.addAttribute("name",tbProduct.getProductName());
-        return "login";
+        return "index";
     }
 
 }

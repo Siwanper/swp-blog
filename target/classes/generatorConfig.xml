@@ -34,22 +34,22 @@
         </javaTypeResolver>
 
         <!-- 实体类 -->
-        <javaModelGenerator targetPackage="com.swp.module.product.model" targetProject="${mbg.path}/java">
+        <javaModelGenerator targetPackage="com.swp.commons.user.model" targetProject="${mbg.path}/java">
             <property name="enableSubPackages" value="false" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
 
         <!-- *Mapper.xml -->
-        <sqlMapGenerator targetPackage="mybatis.module.product" targetProject="${mbg.path}/resources">
+        <sqlMapGenerator targetPackage="mybatis.common.user" targetProject="${mbg.path}/resources">
             <property name="enableSubPackages" value="false" />
         </sqlMapGenerator>
 
         <!-- *Mapper.java-->
-        <javaClientGenerator targetPackage="com.swp.module.product.mapper" targetProject="${mbg.path}/java" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="com.swp.commons.user.mapper" targetProject="${mbg.path}/java" type="XMLMAPPER">
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
 
-        <table schema="" tableName="TB_PRODUCT" />
+        <table schema="" tableName="SYS_USER" />
 
     </context>
 </generatorConfiguration>
