@@ -7,9 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15c502d6-7e6a-45a6-91a2-3a6adbe8039b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/swp/core/support/BaseSupport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swp-blog-doc.docx" beforeDir="false" afterPath="$PROJECT_DIR$/swp-blog-doc.docx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -471,7 +469,7 @@
       <workItem from="1532141863803" duration="4854000" />
       <workItem from="1532147583991" duration="316000" />
       <workItem from="1532235284984" duration="6978000" />
-      <workItem from="1532354763555" duration="6874000" />
+      <workItem from="1532354763555" duration="6896000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1531149749898</created>
@@ -494,11 +492,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532239216970</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="siwanper:BaseSupport">
+      <created>1532361872853</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1532361872854</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60754000" />
+    <option name="totallyTimeSpent" value="60776000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -590,7 +595,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="siwanper:login" />
-    <option name="LAST_COMMIT_MESSAGE" value="siwanper:login" />
+    <MESSAGE value="siwanper:BaseSupport" />
+    <option name="LAST_COMMIT_MESSAGE" value="siwanper:BaseSupport" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
