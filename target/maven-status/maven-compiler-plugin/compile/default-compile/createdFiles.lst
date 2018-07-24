@@ -18,5 +18,6 @@ com/swp/core/annotation/MapperInject.class
 com/swp/core/model/PageModel.class
 com/swp/commons/user/model/SysUserKey.class
 com/swp/core/injector/MapperInjector.class
+com/swp/core/support/BaseSupport.class
 com/swp/module/product/model/TbProductExample$GeneratedCriteria.class
 com/swp/module/product/model/TbProductExample$Criterion.class

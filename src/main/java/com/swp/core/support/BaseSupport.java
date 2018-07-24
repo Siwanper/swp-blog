@@ -12,6 +12,23 @@ import java.util.*;
 /**
  * DESCRIPTION：   基本的通用的工具支持类，包括一系列常用方法的封装，为了类提供便捷的调用方式。
  *
+ * 1、判断对象是否唯恐
+ * 2、对象转换为String
+ * 3、获取 UUID 主键，长度32位，且为大写模式
+ *
+ * 4、对字符串进行Base64编码
+ * 5、对已经进行了base64编码的字符串进行解码
+ * 6、对字符串进行MD5加密
+ *
+ * 7、获取系统当前的日期
+ * 8、时间戳转换为指定格式的日期
+ * 9、日期通过指定格式转换为时间戳
+ *
+ * 10、从指定文件中读取文件内容
+ * 11、将内容写入指定的文件中
+ * 12、读取配置 properties 文件中的值
+ * 13、读取指定路径 properties 文件中的值，会从 classpath 路径下进行查找资源文件
+ *
  * @ProjectName: swp-blog
  * @Package: com.swp.core.support
  * @Author: Siwanper

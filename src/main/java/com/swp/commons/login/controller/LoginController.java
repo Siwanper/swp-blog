@@ -3,6 +3,7 @@ package com.swp.commons.login.controller;
 import com.swp.commons.login.model.LoginModel;
 import com.swp.commons.login.model.LoginUser;
 import com.swp.core.annotation.MapperInject;
+import com.swp.core.controller.BaseController;
 import com.swp.core.persistence.DelegateMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,7 +17,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/common/login")
-public class LoginController {
+public class LoginController extends BaseController {
 
     @MapperInject
     private DelegateMapper delegateMapper;
