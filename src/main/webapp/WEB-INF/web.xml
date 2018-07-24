@@ -42,6 +42,16 @@
         <param-value>classpath:spring/applicationContext.xml</param-value>
     </context-param>
 
+    <!-- 登陆过滤器 -->
+    <filter>
+        <filter-name>loginFilter</filter-name>
+        <filter-class>com.swp.core.filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>loginFilter</filter-name>
+        <url-pattern>/</url-pattern>
+    </filter-mapping>
+
     <!-- 配置session 失效时间 -->
     <session-config>
         <session-timeout>30</session-timeout>

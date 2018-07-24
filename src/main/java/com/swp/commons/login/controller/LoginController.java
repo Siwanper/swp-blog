@@ -37,13 +37,19 @@ public class LoginController extends BaseController {
         if (Boolean.FALSE.equals(loginUser.getUserValid())){
             return new LoginModel(0,"用户已经失效","",remember);
         }
-
+        this.getSession().setAttribute("user",loginUser);
         return new LoginModel(1,"登录成功", "/",remember);
     }
 
-    @RequestMapping("home")
+    @RequestMapping("index")
     public String home(){
         return "login";
+    }
+
+    @RequestMapping("/signout")
+    public String singout() {
+        this.getSession().invalidate();
+        return "redirect:/login";
     }
 
 }
