@@ -2,6 +2,7 @@ package com.swp.commons.login.controller;
 
 import com.swp.commons.login.model.LoginModel;
 import com.swp.commons.login.model.LoginUser;
+import com.swp.core.annotation.LogInject;
 import com.swp.core.annotation.MapperInject;
 import com.swp.core.controller.BaseController;
 import com.swp.core.persistence.DelegateMapper;
@@ -19,13 +20,15 @@ import java.util.Map;
 @RequestMapping("/common/login")
 public class LoginController extends BaseController {
 
+    @LogInject
+    private static Logger logger;
+
     @MapperInject
     private DelegateMapper delegateMapper;
 
     @RequestMapping(value = "/signin", method = RequestMethod.POST)
     @ResponseBody
     public LoginModel signin(String username, String password, boolean remember){
-        System.out.println(username+password);
         Map<String, Object> paramMap = new HashMap<>();
         paramMap.put("userCode",username);
         paramMap.put("userPassword",password);
@@ -38,6 +41,7 @@ public class LoginController extends BaseController {
             return new LoginModel(0,"用户已经失效","",remember);
         }
         this.getSession().setAttribute("user",loginUser);
+        logger.debug("Siwanper -> 执行 LoginController - signin() 登录成功");
         return new LoginModel(1,"登录成功", "/",remember);
     }
 

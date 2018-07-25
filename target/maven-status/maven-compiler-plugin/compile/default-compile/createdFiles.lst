@@ -1,4 +1,5 @@
 com/swp/core/interceptor/LoginInterceptor.class
+com/swp/core/injector/LogInjector$1.class
 com/swp/core/persistence/DelegateMapper.class
 com/swp/commons/login/model/LoginModel.class
 com/swp/commons/user/model/SysUserExample$Criteria.class
@@ -17,11 +18,14 @@ com/swp/commons/user/mapper/SysUserMapper.class
 com/swp/core/filter/LoginFilter.class
 com/swp/core/model/MsgModel.class
 com/swp/core/injector/MapperInjector$1.class
+com/swp/core/aspect/LogAspect.class
 com/swp/commons/user/model/SysUser.class
+com/swp/core/injector/LogInjector.class
 com/swp/core/annotation/MapperInject.class
 com/swp/core/controller/BaseController.class
 com/swp/core/model/PageModel.class
 com/swp/commons/user/model/SysUserKey.class
+com/swp/core/annotation/LogInject.class
 com/swp/core/injector/MapperInjector.class
 com/swp/core/support/BaseSupport.class
 com/swp/module/product/model/TbProductExample$GeneratedCriteria.class

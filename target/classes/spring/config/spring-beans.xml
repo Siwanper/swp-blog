@@ -17,6 +17,7 @@
     <!-- 使用自定义注解 @MapperInject 注入mapper对象  -->
     <bean id="mapper" class="com.swp.core.injector.MapperInjector"/>
 
-
+    <!-- 使用自定义注解 @LogInject 注入logger对象 -->
+    <bean id="logger" class="com.swp.core.injector.LogInjector"/>
 
 </beans>

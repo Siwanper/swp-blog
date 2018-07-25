@@ -17,5 +17,4 @@ public @interface MapperInject {
      * @return Class<?> 对象类型</>
      */
     Class<?> value() default java.lang.Object.class;
-
 }
