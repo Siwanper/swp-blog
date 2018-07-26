@@ -42,7 +42,7 @@ public class LoginFilter implements Filter {
         int port = req.getServerPort(); // 端口
         logger.debug("Siwanper -> 执行 LoginFilter - doFilter() 请求参数 : uri = "+uri);
 
-        String loginPath = scheme + "://" + serverName + ":" + port + path + "/common/login/index";
+        String loginPath = scheme + "://" + serverName + ":" + port + path + "/login";
 
         // 访问 login.jsp 不过滤
         if (uri.endsWith("login.jsp")){

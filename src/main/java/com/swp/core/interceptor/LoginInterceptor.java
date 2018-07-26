@@ -49,7 +49,7 @@ public class LoginInterceptor implements HandlerInterceptor {
         if (uri.contains("common/login/signin")){
             return true;
         }
-        if (uri.contains("common/login/index")){
+        if (uri.contains("/login")){
             return true;
         }
 
@@ -62,7 +62,7 @@ public class LoginInterceptor implements HandlerInterceptor {
             return false;
         } else {
             logger.debug("Siwanper -> 执行 LoginInterceptor -> preHandle() 用户没有登录");
-            httpServletResponse.sendRedirect(httpServletRequest.getContextPath()+"/common/login/index");
+            httpServletResponse.sendRedirect(httpServletRequest.getContextPath()+"/login");
             return false;
         }
     }

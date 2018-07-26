@@ -21,4 +21,8 @@
 		SELECT * FROM SYS_USER WHERE USER_CODE LIKE BINARY #{userCode} AND USER_PASSWORD LIKE BINARY #{userPassword}
 	</select>
 
+    <select id="getUserRoles" resultType="java.util.Map" parameterType="java.lang.String">
+        SELECT T.ROLE_ID, T1.ROLE_NAME FROM USER_ROLE_REL T, SYS_ROLE T1 WHERE T.ROLE_ID = T1.ROLE_ID AND T.USER_ID = #{0}
+    </select>
+
 </mapper>

@@ -29,4 +29,5 @@ com/swp/core/annotation/LogInject.class
 com/swp/core/injector/MapperInjector.class
 com/swp/core/support/BaseSupport.class
 com/swp/module/product/model/TbProductExample$GeneratedCriteria.class
+com/swp/commons/index/controller/IndexController.class
 com/swp/module/product/model/TbProductExample$Criterion.class

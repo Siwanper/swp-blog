@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -40,14 +41,14 @@ public class LoginController extends BaseController {
         if (Boolean.FALSE.equals(loginUser.getUserValid())){
             return new LoginModel(0,"用户已经失效","",remember);
         }
+        List<Map<String , Object>> userRoles = delegateMapper.selectList("com.swp.commons.login.mapper.LoginCustomMapper.getUserRoles",loginUser.getUserId());
+        if (!this.isNull(userRoles)){
+            loginUser.setUserRoles(userRoles);
+        }
+
         this.getSession().setAttribute("user",loginUser);
         logger.debug("Siwanper -> 执行 LoginController - signin() 登录成功");
         return new LoginModel(1,"登录成功", "/",remember);
-    }
-
-    @RequestMapping("index")
-    public String home(){
-        return "login";
     }
 
     @RequestMapping("/signout")
