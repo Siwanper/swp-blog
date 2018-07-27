@@ -1,3 +1,19 @@
+body, html {
+    height: 100%;
+    position: relative;
+    font-family: "Microsoft Sans Serif";
+    font-size: 13px;
+    font-weight: 400;
+}
+
+a, a:hover, a:active, a:focus {
+    text-decoration: none;
+    -webkit-user-drag: none;
+    outline: none;
+    color: #000;
+}
+
 #main {
     padding: 10px 20px;
 }
+
