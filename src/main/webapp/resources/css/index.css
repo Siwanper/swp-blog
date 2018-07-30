@@ -254,6 +254,11 @@ a, a:hover, a:active, a:focus {
         box-shadow: 0 0 20px rgba(14, 18, 21, .38);
     }
 
+    #sidebar.toggled{
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0, 0 , 0);
+    }
+
     #header .line-trigger {
         display: inline-block !important;
     }
@@ -286,4 +291,198 @@ a, a:hover, a:active, a:focus {
     transition-duration: .3s;
     overflow-y: auto;
     z-index: 10;
+}
+
+/* 个人资料 */
+.s-profile > a {
+    display: block;
+    height: 129px;
+    width: 100%;
+    margin-bottom: 5px;
+    background-size: 100%;
+    text-decoration: none;
+}
+
+.s-profile > a .sp-pic{
+    padding: 12px;
+}
+
+.s-profile > a .sp-pic > img {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    border: 3px solid rgba(0,0,0,.14);
+    box-sizing: content-box;
+}
+
+.s-profile > a .sp-info {
+    background: rgba(0, 0 ,0 ,.37);
+    padding: 7px 14px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    position: relative;
+}
+
+.s-profile > a .sp-info > i {
+    font-size: 19px;
+    line-height: 100%;
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    -webkit-transition: all ;
+    -moz-transition: all ;
+    -ms-transition: all ;
+    -o-transition: all ;
+    transition: all ;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+}
+
+.s-profile.toggled .sp-info > i {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.s-profile .main-menu {
+    display: none;
+    margin: 0;
+}
+
+.zmdi {
+    display: inline-block;
+    font: normal normal normal 14px/1 Material-Design-Iconic-Font;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.zmdi-caret-down:before {
+    content: "\f2f2";
+}
+
+.main-menu {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 0;
+}
+
+.main-menu a {
+    -webkit-transition: color ;
+    -moz-transition: color ;
+    -ms-transition: color ;
+    -o-transition: color ;
+    transition: color ;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+}
+
+.main-menu > li > a {
+    padding: 14px 20px 14px 65px;
+    display: block;
+    font-weight: 500;
+    position: relative;
+    color: #4C4C4C;
+}
+
+.main-menu > li > a > i {
+    position: absolute;
+    left: 25px;
+    top:2px;
+    width: 25px;
+    font-size: 18px;
+    text-align: center;
+    padding: 11px 0;
+}
+
+.sub-menu ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+}
+
+.sub-menu ul > li:first-child > a {
+    padding-top: 14px;
+}
+
+.sub-menu ul > li:last-child > a {
+    padding-bottom: 16px;
+}
+
+.sub-menu ul > li > a {
+    padding: 8px 20px 8px 65px;
+    font-weight: 500;
+    display: block;
+    color: #989898;
+}
+
+.sub-menu.toggled ul {
+    display: block;
+}
+
+.sub-menu > a:after, .sub-menu > a:before {
+    position: absolute;
+    top: 50%;
+    margin-top: -11px;
+    font-family: Material-Design-Iconic-Font;
+    font-size: 17px;
+    right: 15px;
+    -webkit-transition: all;
+    -o-transition: all;
+    transition: all;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms
+}
+
+.sub-menu > a:before {
+    content: '\f278';
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.sub-menu.toggled > a:before {
+    content: '\f278';
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.sub-menu > a:after {
+    content: '\f273';
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.sub-menu.toggled > a:after {
+    content: '\f273';
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.main-menu a:hover {
+    color: #262626;
+}
+
+.upms-version {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 46px;
+    height: 46px;
+    color: #777777;
+    border: 1px solid #eee;
 }

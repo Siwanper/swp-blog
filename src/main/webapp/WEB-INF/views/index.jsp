@@ -11,6 +11,11 @@
 <html>
 <head>
     <title>Siwanper Blog</title>
+    <style>
+        .s-profile > a {
+            background: url(${pageContext.request.contextPath}/resources/images/background.png) left top no-repeat;
+        }
+    </style>
 </head>
 <body>
 <%-- 页面头部 --%>
@@ -36,9 +41,11 @@
                     <ul class="dropdown-menu dm-icon pull-right">
                         <form id="search-from" class="form-inline">
                             <div class="input-group">
-                                <input id="keywords" type="text" name="keywords" class="form-control" placeholder="search">
+                                <input id="keywords" type="text" name="keywords" class="form-control"
+                                       placeholder="search">
                                 <div class="input-group-btn">
-                                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                                    <button type="submit" class="btn btn-default"><span
+                                            class="glyphicon glyphicon-search"></span></button>
                                 </div>
                             </div>
                         </form>
@@ -67,7 +74,8 @@
                                         <a class="waves-effect" href="javascript:;">${item.ROLE_NAME}</a>
                                     </c:if>
                                     <c:if test="${user.userRoles.size() > 1}">
-                                        <a class="waves-effect" href="javascript:changeRole('${item.ROLE_ID}')">${item.ROLE_NAME}</a>
+                                        <a class="waves-effect"
+                                           href="javascript:changeRole('${item.ROLE_ID}')">${item.ROLE_NAME}</a>
                                     </c:if>
                                 </li>
                             </c:forEach>
@@ -86,12 +94,14 @@
                             </a>
                         </li>
                         <li>
-                            <a class="waves-effect" href="javascript:Tab.addTab('模版查看','${pageContext.request.contextPath}/common/template');">
+                            <a class="waves-effect"
+                               href="javascript:Tab.addTab('模版查看','${pageContext.request.contextPath}/common/template');">
                                 <i class="zmdi zmdi-account"></i>个人资料
                             </a>
                         </li>
                         <li>
-                            <a class="waves-effect" href="javascript:Tab.addTab('模版查看','${pageContext.request.contextPath}/common/setting/manager');">
+                            <a class="waves-effect"
+                               href="javascript:Tab.addTab('模版查看','${pageContext.request.contextPath}/common/setting/manager');">
                                 <i class="zmdi zmdi-settings"></i>系统设置
                             </a>
                         </li>
@@ -112,7 +122,99 @@
 <%-- 页面内容部分 --%>
 <section id="main">
     <%-- 左边栏 --%>
-    <aside id="sidebar"></aside>
+    <aside id="sidebar">
+        <%--个人资料区--%>
+        <div class="s-profile">
+            <a class="waves-effect waves-light" href="javascript:;">
+                <div class="sp-pic">
+                    <img src="${pageContext.request.contextPath}/resources/images/avatar.png">
+                </div>
+                <div class="sp-info">
+                    ${user.userName},hello!
+                    <i class="zmdi zmdi-caret-down"></i>
+                </div>
+            </a>
+            <ul class="main-menu">
+                <li>
+                    <a class="waves-effect"
+                       href="javascript:Tab.addTab('模版查看','${pageContext.request.contextPath}/common/personal/manage')">
+                        <i class="zmdi zmdi-account"></i>个人资料
+                    </a>
+                    <a class="waves-effect"
+                       href="javascript:Tab.addTab('模版查看','${pageContext.request.contextPath}/common/setting/manage')">
+                        <i class="zmdi zmdi-settings"></i>系统设置
+                    </a>
+                    <a class="waves-effect" href="javascript:logout()">
+                        <i class="zmdi zmdi-run"></i>退出登录
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <%--/个人资料区--%>
+
+        <%-- 菜单区 --%>
+        <ul id="main-menu" class="main-menu">
+            <li>
+                <a class="waves-effect" href="javascript:Tab.addTab('首页','home');">
+                    <i class="zmdi zmdi-home"></i>首页
+                </a>
+            </li>
+            <li class="sub-menu system_menus">
+                <a class="waves-effect" href="javascript:;"><i class="zmdi zmdi-accounts"></i>角色用户管理 </a>
+                <ul>
+                    <li>
+                        <a class="waves-effect" href="javascript:Tab.add('角色管理','${pageContext.request.contextPath}/manage/role/index');">
+                            角色管理
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect" href="javascript:Tab.add('用户管理','${pageContext.request.contextPath}/common/user/init');">
+                            用户管理
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect" href="javascript:Tab.add('产品管理','${pageContext.request.contextPath}/demo/product/init');">
+                            产品管理
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sub-menu system_menus">
+                <a class="waves-effect" href="javascript:;"><i class="zmdi zmdi-lock-outline"></i>权限资源管理 </a>
+                <ul>
+                    <li>
+                        <a class="waves-effect" href="javascript:Tab.add('权限管理','${pageContext.request.contextPath}/manage/resoures/index');">
+                            权限管理
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect" href="javascript:Tab.add('菜单管理','${pageContext.request.contextPath}/common/menu/init');">
+                            菜单管理
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sub-menu system_menus">
+                <a class="waves-effect" href="javascript:;"><i class="zmdi zmdi-more"></i>其他数据管理 </a>
+                <ul>
+                    <li>
+                        <a class="waves-effect" href="javascript:Tab.add('日志记录','${pageContext.request.contextPath}/common/logging/init');">
+                            日志记录
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect" href="javascript:Tab.add('模版查看','${pageContext.request.contextPath}/common/template');">
+                            模版查看
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <div class="upms-version">
+                &copy;Siwanper Blog V1.0.0
+            </div>
+        </ul>
+        <%-- /菜单区 --%>
+    </aside>
 
     <%-- 内容区域--%>
     <section id="content"></section>

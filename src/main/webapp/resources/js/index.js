@@ -1,3 +1,8 @@
+
+$(function(){
+    Waves.displayEffect();
+})
+
 function fullPage() {
     if ($.util.supportsFullScreen){
         if ($.util.isFullScreen()){
