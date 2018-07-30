@@ -1,0 +1,289 @@
+body, html {
+    position: relative;
+    height: 100%;
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+image {
+    vertical-align: middle;
+}
+
+a, a:hover, a:active, a:focus {
+    text-decoration: none;
+    -webkit-user-drag: none;
+}
+
+/* 页面头部 */
+#header {
+    width: 100%;
+    height: 70px;
+    padding: 0px 20px;
+    position: fixed;
+    z-index: 11;
+    left: 0;
+    top: 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+#header {
+    background: #4B96B4;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #4B96B4 0%, #59C0BF 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #4B96B4), color-stop(100%, #59C0BF));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #4B96B4 0%, #59C0BF 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #4B96B4 0%, #59C0BF 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #4B96B4 0%, #59C0BF 100%);
+    /* IE10+ */
+    background: linear-gradient(-45deg, #4B96B4 0%, #59C0BF 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4B96B4, endColorstr=#59C0BF, GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+#menu {
+    position: relative;
+    list-style: none;
+    padding: 17px 0;
+    margin-bottom: 0;
+    height: 70px;
+}
+
+#menu > li {
+    float: left;
+}
+
+/* 头部左侧侧边栏操作按钮 */
+.line-trigger {
+    margin-left: -5px;
+    /* 手指针 */
+    cursor: pointer;
+    position: relative;
+    display: none !important;
+}
+
+.line-trigger:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .22);
+    -webkit-transition: all;
+    -o-transition: all;
+    transition: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    transform: scale(0);
+    z-index: 0;
+    margin-top: -22px;
+    margin-left: -22px
+}
+
+.line-trigger.toggled:before {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.line-wrap {
+    width: 18px;
+    height: 12px;
+    -webkit-transition: all;
+    transition: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    margin: 12px 20px;
+}
+
+.toggled .line-wrap{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.line-wrap .line {
+    width: 18px;
+    height: 2px;
+    background: #FFFFFF;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+    transition: all;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+}
+.line-wrap .line.center {
+    margin: 3px 0;
+}
+.toggled .line-wrap .line.top {
+    width: 12px;
+    transform:translateX(8px) translateY(1px) rotate(45deg);
+    -webkit-transform:translateX(8px) translateY(1px) rotate(45deg);
+}
+.line-wrap .line.center {
+    margin: 3px 0
+}
+.toggled .line-wrap .line.bottom {
+    width: 12px;
+    transform:translateX(8px) translateY(-1px) rotate(-45deg);
+    -webkit-transform:translateX(8px) translateY(-1px) rotate(-45deg);
+}
+
+/* 头部logo */
+#logo{
+
+}
+
+#system_title {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 33px;
+    height: 33px;
+}
+
+/* 头部右侧工具按钮 */
+.pull-right {
+    float: right !important;
+}
+
+.hi-menu {
+    /* ul 列表样式 */
+    list-style: none;
+    padding: 0;
+}
+
+.hi-menu > li {
+    display: inline-block;
+    margin: 0 1px;
+    vertical-align: top;
+    min-width: 50px;
+}
+
+.hi-menu > li > a {
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    -webkit-transition: background-color;
+    -moz-transition: background-color;
+    -ms-transition: background-color;
+    -o-transition: background-color;
+    transition: background-color;
+    border-radius: 2px;
+    transition-duration: 250ms;
+    -webkit-transition-duration: 250ms;
+}
+
+.hi-menu > li > a > .him-icon {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    box-shadow: 0 2px 10px rgba(0 ,0, 0, .2);
+    border: none;
+}
+
+.dropdown-menu .divider{
+    height: 1px;
+    margin: 8px 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .08);
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    clear: both;
+    font-weight: 400;
+    color: #333333;
+    padding: 10px 20px;
+    font-size: 13px;
+    -webkit-transition: background-color ;
+    -moz-transition: background-color ;
+    -ms-transition: background-color ;
+    -o-transition: background-color ;
+    transition: background-color ;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+}
+
+.dropdown li > a > .zmdi {
+    line-height: 100%;
+    vertical-align: top;
+    font-size: 16px;
+    width: 28px;
+}
+
+#header .skin-switch {
+    padding: 10px 0 2px;
+    text-align: center;
+    font-size: 13px;
+}
+
+#search-from {
+    margin: 6px 15px;
+}
+
+#keywords {
+    min-width: 150px;
+}
+
+/* 侧边栏响应式 */
+@media (max-width: 1279px) {
+    #sidebar {
+        -webkit-transform: translate3d(-288px, 0, 0);
+        transform: translate3d(-288px, 0, 0);
+        box-shadow: 0 0 20px rgba(14, 18, 21, .38);
+    }
+
+    #header .line-trigger {
+        display: inline-block !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #header {
+        padding: 0 8px;
+    }
+}
+
+/* 主题部分 */
+#main {
+    height: 100%;
+    padding-top: 70px;
+    padding-bottom: 0px;
+}
+
+/* 侧边栏部分 */
+#sidebar{
+    position: fixed;
+    width: 268px;
+    height: calc(100% - 70px);
+    background: #FFFFFF;
+    box-shadow: 1px 0 4px rgba(0,0,0,0.3);
+    top: 70px;
+    left: 0px;
+    transition: all;
+    -webkit-transition:.3s;
+    transition-duration: .3s;
+    overflow-y: auto;
+    z-index: 10;
+}
