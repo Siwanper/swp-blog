@@ -486,3 +486,30 @@ a, a:hover, a:active, a:focus {
     color: #777777;
     border: 1px solid #eee;
 }
+
+/* 内容区域 */
+#content {
+    height: 100%;
+    padding-right: 0;
+    -webkit-transition: all ;
+    -moz-transition: all ;
+    -ms-transition: all ;
+    -o-transition: all ;
+    transition: all ;
+}
+
+@media (min-width: 768px) {
+    #content{
+        padding-left: 0;
+    }
+}
+@media (min-width: 992px) {
+    #content{
+        padding-left: 0;
+    }
+}
+@media (min-width: 1280px) {
+    #content{
+        padding-left: 268px;
+    }
+}
