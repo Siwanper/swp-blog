@@ -146,7 +146,6 @@ a, a:hover, a:active, a:focus {
 #logo{
 
 }
-
 #system_title {
     color: #FFFFFF;
     font-size: 16px;
@@ -364,6 +363,7 @@ a, a:hover, a:active, a:focus {
     content: "\f2f2";
 }
 
+/* 菜单部分 */
 .main-menu {
     list-style: none;
     padding-left: 0;
@@ -401,7 +401,7 @@ a, a:hover, a:active, a:focus {
 .sub-menu ul {
     list-style: none;
     padding: 0;
-    display: block;
+    display: none;
 }
 
 .sub-menu ul > li:first-child > a {
@@ -512,4 +512,171 @@ a, a:hover, a:active, a:focus {
     #content{
         padding-left: 268px;
     }
+}
+
+/* 选项卡 */
+.content_tab {
+    width: 100%;
+    height: 48px;
+    overflow: hidden;
+}
+
+.content_tab {
+    background: #4B96B4;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #4B96B4 0%, #57B9BD 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #4B96B4), color-stop(100%, #57B9BD));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #4B96B4 0%, #57B9BD 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #4B96B4 0%, #57B9BD 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #4B96B4 0%, #57B9BD 100%);
+    /* IE10+ */
+    background: linear-gradient(-45deg, #4B96B4 0%, #57B9BD 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4B96B4, endColorstr=#57B9BD, GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.content_tab > ul {
+    padding: 0;
+    font-size: 0;
+    display: block;
+    white-space: nowrap;
+    /*滚动*/
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+}
+
+.scroll > ul {
+    margin: 0 40px;
+}
+
+.tab_left, .tab_right {
+    width: 40px;
+    height: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+    text-align: center;
+    display: none;
+}
+
+.tab_left {
+    float: left;
+    margin-right: -40px;
+}
+
+.tab_right {
+    float: right;
+    margin-left: -40px;
+}
+
+.scroll > .tab_left, .scroll > .tab_right {
+    display: block;
+}
+
+.tab_left > a, .tab_right > a {
+    display: block;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 22px;
+}
+
+.tab_left > .active, .tab_right > .active {
+    color: #FFFFFF;
+}
+
+.content_tab {
+    position: relative;
+}
+
+.content_tab > ul > li {
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.content_tab > ul > li > a {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 28px;
+    transition: background-color .35s cubic-bezier(.35, 0 ,.25, 1);
+    border-bottom: none;
+    color: white;
+}
+
+.content_tab > ul > li > a:active {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.content_tab > ul > .cur > a {
+    color: #FFFFFF;
+}
+/* 不显示下滑线 */
+.content_tab > ul > li > a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    width: 0;
+    width: 0;
+    border-bottom: 3px solid #FFEB3B;
+    transition: all linear .2s;
+}
+/* 显示下滑线 */
+.content_tab > ul > .cur > a:after {
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    opacity: 1;
+    transition: all linear .2s;
+}
+
+/* 内容主体 */
+.content_main {
+    height: calc(100% - 48px);
+    -webkit-overflow-scrolling: touch;
+}
+.content_main > .cur {
+    display: block;
+}
+.iframe {
+    height: 100%;
+    display: none;
+}
+#iframe_home {
+    padding: 15px 30px;
+    font-size: 13px;
+    overflow: auto;
+}
+#iframe_home p {
+    margin-bottom: 5px;
+    line-height: 2em;
+}
+
+.footer {
+    display: none;
+}
+
+/* 滚动条 */
+.mCSB_scrollTools {
+    width: 5px
+}
+
+.mCSB_scrollTools .mCSB_dragger_bar {
+    border-radius: 0 !important
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal, .mCSB_scrollTools.mCSB_scrollTools_vertical {
+    margin: 0 !important
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    height: 10px
 }

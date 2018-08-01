@@ -1,0 +1,35 @@
+
+.rectView {
+    background: #00B83F;
+    width: 160px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.squreView {
+    background: #00B83F;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.circleView {
+    background: #00B83F;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.moduleView > div {
+    float: left;
+    margin: 0 10px;
+}
+
+.moduleView > div > button {
+    margin-top: 10px;
+    width: 75px;
+}
+
+.moduleView > div > .lagBtn {
+    width: 160px;
+}

@@ -18,6 +18,34 @@
     </style>
 </head>
 <body>
+
+<%-- 角色选择 --%>
+<div id="selRoleModel" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="selRolModalTitle" class="modal-title">
+                    请选择用户角色
+                </h4>
+            </div>
+            <div class="modal-body">
+                <select id="userRole" name="userRole" class="selectpicker">
+                    <c:forEach items="${user.userRoles}" var="item">
+                        <option value="${item.ROLE_ID}">${item.ROLE_NAME}</option>
+                    </c:forEach>
+                </select>
+            </div>
+            <div class="modal-footer">
+                <button id="selRole-btn" type="button" class="waves-effect btn btn-success btn-sm"
+                        style="margin-left: 10px"
+                        href="javascript:void(0)">
+                    <i class="zmdi zmdi-save"></i> 确定
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <%-- 页面头部 --%>
 <header id="header">
     <ul id="menu">
@@ -245,5 +273,22 @@
         </div>
     </section>
 </section>
+
+<%-- 页面尾部 --%>
+<footer class="footer"></footer>
+
+<script type="text/javascript">
+    var roleSize = '${user.userRoles.size()}';
+    if (roleSize > 1){
+        $("#selRoleModel").modal('show');
+    }else {
+
+    }
+
+
+
+
+</script>
+
 </body>
 </html>

@@ -13,6 +13,8 @@
     <title>UI 模版</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="${pageContext.request.contextPath}/resources/css/template.css" rel="stylesheet">
+    <script src="${pageContext.request.contextPath}/resources/js/template.js"></script>
 </head>
 <body>
 <div id="main">
@@ -162,6 +164,51 @@
                     nice
                 </option>
             </select>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 5px; margin-bottom: 5px">
+        <div class="hideOrShow moduleView">
+            <h3>Hiden/Show</h3>
+            <div>
+                <div class="hideView rectView"></div>
+                <button id="hideBtn" class="btn btn-default">Hide</button>
+                <button id="showBtn" class="btn btn-primary">Show</button>
+            </div>
+            <div>
+                <div class="toggleView rectView"></div>
+                <button id="toggle" class="lagBtn btn btn-default ">Toggle</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 5px; margin-bottom: 5px">
+        <div class="fadeInOrOut moduleView">
+            <h3>FadeIn/FadeOut</h3>
+            <div>
+                <div class="fadeView rectView"></div>
+                <button id="fadeInBtn" class="btn btn-default">FadeIn</button>
+                <button id="fadeOutBtn" class="btn btn-primary">FadeOut</button>
+            </div>
+            <div>
+                <div class="fadeToggleView rectView"></div>
+                <button id="fadeToggle" class="lagBtn btn btn-default">FadeToggle</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 5px; margin-bottom: 5px">
+        <div class="slideDownOrUp moduleView">
+            <h3>SlideDown/SlideUp</h3>
+            <div>
+                <div class="slideView rectView"></div>
+                <button id="slideDownBtn" class="btn btn-default">SlideDown</button>
+                <button id="slideUpBtn" class="btn btn-primary">SlideUp</button>
+            </div>
+            <div>
+                <div class="slideToggleView rectView"></div>
+                <button id="slideToggle" class="lagBtn btn btn-default">SlideToggle</button>
+            </div>
         </div>
     </div>
 
