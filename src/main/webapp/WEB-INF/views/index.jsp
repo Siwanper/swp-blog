@@ -20,7 +20,7 @@
 <body>
 
 <%-- 角色选择 --%>
-<div id="selRoleModel" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+<div id="selRoleModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -278,16 +278,61 @@
 <footer class="footer"></footer>
 
 <script type="text/javascript">
-    var roleSize = '${user.userRoles.size()}';
-    if (roleSize > 1){
-        $("#selRoleModel").modal('show');
-    }else {
+    var roleSize = '${user.userRoles.size() }';
+    if (roleSize > 1) {
+        $('#selRoleModal').modal('show');
+    } else {
+        loadMenu(null);
+    }
+    $('#selRole-btn').click(function () {
+        var roleId = $('#userRole').val();
+        loadMenu(roleId);
+        $('#selRoleModal').modal('hide');
+    });
 
+    function changeRole(roleId) {
+        loadMenu(roleId);
     }
 
+    function logout() {
+        $.confirm({
+            type:'grey',
+            animationSpeed:300,
+            title:false,
+            content:'您确认要退出系统吗?',
+            buttons:{
+                confirm: {
+                    text:'确认',
+                    btnClass:"waves-effect waves-button",
+                    action: function () {
+                        location.href = "${pageContext.request.contextPath}/common/login/signout";
+                    }
+                },
+                cancel:{
+                    text:'取消',
+                    btnClass:'waves-effect waves-button'
+                }
+            }
+        });
+    }
 
+    function loadMenu(roleId) {
+        // Yan左侧菜单数据初始化
+        var menuHtml = "<li><a class='waves-effect' href='javascript:Tab.addTab(\"首页\", \"home\");'><i class='zmdi zmdi-home'></i> 首页</a></li>";
+        $.post('${pageContext.request.contextPath}/' + roleId + '/menu', null, function (data) {
 
-
+            $.each(data, function (index, item) {
+                menuHtml += "<li class='sub-menu system_menus'><a class='waves-effect'><i class='" + item.icon + "'></i> " + item.name + "</a><ul>";
+                $.each(item.children, function (ids, itm) {
+                    menuHtml += "<li><a class='waves-effect' href='javascript:Tab.addTab(\"" + itm.name + "\", \"${pageContext.request.contextPath}" + itm.url + "\");'>" + itm.name + "</a></li>";
+                });
+                menuHtml += "</ul></li>";
+            });
+            menuHtml += "<li><div class='upms-version'>&copy; YAN FRAME V1.0</div></li>";
+            alert(menuHtml);
+            $('#main-menu').html(menuHtml);
+        });
+    }
 </script>
 
 </body>
