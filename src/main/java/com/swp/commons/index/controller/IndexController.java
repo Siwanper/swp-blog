@@ -1,5 +1,6 @@
 package com.swp.commons.index.controller;
 
+import com.swp.commons.index.model.MenuModel;
 import com.swp.core.annotation.LogInject;
 import com.swp.core.annotation.MapperInject;
 import com.swp.core.controller.BaseController;
@@ -8,6 +9,12 @@ import org.slf4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 描述:
@@ -64,6 +71,51 @@ public class IndexController extends BaseController {
     @RequestMapping("/template")
     public String template() {
         return "template";
+    }
+
+
+    /**
+     * 获取角色对应的菜单集合
+     *
+     * @param roleId
+     * @return
+     */
+    @RequestMapping("/{roleId}/menu")
+    @ResponseBody
+    public List<MenuModel> menu(@PathVariable String roleId) {
+
+        Map<String, Object> paramMap = new HashMap<>();
+        paramMap.put("menuId", "00000000000000000000000000000001");
+        paramMap.put("roleId", roleId);
+        paramMap.put("userId", this.getSessionUser().getUserId());
+
+        List<MenuModel> list = new ArrayList<>();
+        List<MenuModel> rootList = mapper.selectList("com.swp.commons.index.mapper.IndexCustomMapper.getMenu", paramMap);
+        for (MenuModel menuModel : rootList) {
+            menuModel.setChildren(getMenu(menuModel.getId(), roleId));
+            list.add(menuModel);
+        }
+        System.out.println(list);
+        return list;
+    }
+
+    public List<MenuModel> getMenu(String pid, String roleId){
+        Map<String, Object> map = new HashMap<>();
+        map.put("menuId",pid);
+        map.put("roleId",roleId);
+        map.put("userId",this.getSessionUser().getUserId());
+
+        List<MenuModel> menuList = new ArrayList<>();
+        List<MenuModel> list = mapper.selectList("com.swp.commons.index.mapper.IndexCustomMapper.getMenu", map);
+        for (MenuModel model :
+                list) {
+            if (!this.isNull(model.getId())){
+                model.setChildren(getMenu(model.getId(),roleId));
+            }
+            menuList.add(model);
+        }
+        return menuList;
+
     }
 
 }
