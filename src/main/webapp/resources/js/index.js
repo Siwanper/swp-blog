@@ -5,16 +5,16 @@ $(function(){
         $(this).toggleClass('toggled');
         $("#sidebar").toggleClass('toggled');
     })
+    // 侧边栏二级菜单
+    $(document).on('click', '.sub-menu a', function() {
+        $(this).next().slideToggle(200);
+        $(this).parent().toggleClass('toggled');
+    });
     // 个人资料
-    $(".s-profile a").click(function () {
+    $(document).on('click', '.s-profile a', function() {
         $(this).next().slideToggle(200);
         $(this).parent().toggleClass('toggled');
-    })
-    // 二级菜单点击
-    $(".sub-menu a").click(function () {
-        $(this).next().slideToggle(200);
-        $(this).parent().toggleClass('toggled');
-    })
+    });
 
     // Waves初始化（点击效果）
     Waves.displayEffect();

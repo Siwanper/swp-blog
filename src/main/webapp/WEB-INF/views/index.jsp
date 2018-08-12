@@ -317,21 +317,20 @@
     }
 
     function loadMenu(roleId) {
-        // Yan左侧菜单数据初始化
-        var menuHtml = "<li><a class='waves-effect' href='javascript:Tab.addTab(\"首页\", \"home\");'><i class='zmdi zmdi-home'></i> 首页</a></li>";
-        $.post('${pageContext.request.contextPath}/' + roleId + '/menu', null, function (data) {
 
-            $.each(data, function (index, item) {
-                menuHtml += "<li class='sub-menu system_menus'><a class='waves-effect'><i class='" + item.icon + "'></i> " + item.name + "</a><ul>";
-                $.each(item.children, function (ids, itm) {
-                    menuHtml += "<li><a class='waves-effect' href='javascript:Tab.addTab(\"" + itm.name + "\", \"${pageContext.request.contextPath}" + itm.url + "\");'>" + itm.name + "</a></li>";
-                });
+        var menuHtml = "<li><a class='waves-effect' href='javascript:Tab.addTab(\"首页\",\"home\");'><i class='zmdi zmdi-home'></i>首页</a></li>";
+        $.post("${pageContext.request.contextPath}/"+roleId+"/menu",null,function (data) {
+            $.each(data,function (index, item) {
+                menuHtml += "<li class='sub-menu system_menus'><a class='waves-effect' href='javascript:;'><i class='"+item.icon+"'></i>"+item.name+"</a><ul>";
+                $.each(item.children,function (idx,itm) {
+                    menuHtml += "<li><a class='waves-effect' href='javascript:Tab.add(\""+itm.name+"\",\"${pageContext.request.contextPath}"+itm.url+"\");'>"+itm.name+"</a></li>";
+                })
                 menuHtml += "</ul></li>";
-            });
-            menuHtml += "<li><div class='upms-version'>&copy; YAN FRAME V1.0</div></li>";
-            alert(menuHtml);
-            $('#main-menu').html(menuHtml);
-        });
+            })
+            menuHtml += "<li><div class='upms-version'>&copy;Siwanper Blog</div></li>";
+            $("#main-menu").html(menuHtml);
+        })
+
     }
 </script>
 

@@ -1,6 +1,7 @@
 com/swp/core/interceptor/LoginInterceptor.class
 com/swp/core/injector/LogInjector$1.class
 com/swp/core/persistence/DelegateMapper.class
+com/swp/commons/index/model/MenuModel.class
 com/swp/commons/login/model/LoginModel.class
 com/swp/commons/user/model/SysUserExample$Criteria.class
 com/swp/module/product/controller/ProductController.class
