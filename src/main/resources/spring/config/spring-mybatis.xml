@@ -37,7 +37,7 @@
 
     <!-- 扫描Mapper -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.swp.module.product.mapper" />
+        <property name="basePackage" value="com.swp" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     </bean>
 

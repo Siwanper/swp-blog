@@ -225,6 +225,14 @@
             <version>1.7.25</version>
         </dependency>
 
+        <!-- 添加 dom4j 依赖包（用于解析 xml）-->
+        <!-- 包含 dom4j-1.6.1.jar、 xml-apis-1.0.b2.jar -->
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>

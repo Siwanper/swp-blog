@@ -182,6 +182,7 @@
 
         <%-- 菜单区 --%>
         <ul id="main-menu" class="main-menu">
+            <%--
             <li>
                 <a class="waves-effect" href="javascript:Tab.addTab('首页','home');">
                     <i class="zmdi zmdi-home"></i>首页
@@ -240,6 +241,7 @@
             <div class="upms-version">
                 &copy;Siwanper Blog V1.0.0
             </div>
+            --%>
         </ul>
         <%-- /菜单区 --%>
     </aside>
