@@ -5,12 +5,17 @@ import com.swp.core.annotation.LogInject;
 import com.swp.core.annotation.MapperInject;
 import com.swp.core.controller.BaseController;
 import com.swp.core.persistence.DelegateMapper;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
 import org.slf4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -74,6 +79,8 @@ public class IndexController extends BaseController {
     }
 
 
+    // TODO 通用文件下载
+
     /**
      * 获取角色对应的菜单集合
      *
@@ -84,19 +91,26 @@ public class IndexController extends BaseController {
     @ResponseBody
     public List<MenuModel> menu(@PathVariable String roleId) {
 
-        Map<String, Object> paramMap = new HashMap<>();
-        paramMap.put("menuId", "00000000000000000000000000000001");
-        paramMap.put("roleId", roleId);
-        paramMap.put("userId", this.getSessionUser().getUserId());
+        if ("admin".equals(this.getSessionUser().getUserType())){
+            System.out.println("getUserType : "+this.getSessionUser().getUserType());
+            // 管理员角色在系统xml中读取
+            return this.getMenuFromXml();
+        } else {
+            Map<String, Object> paramMap = new HashMap<>();
+            paramMap.put("menuId", "00000000000000000000000000000001");
+            paramMap.put("roleId", roleId);
+            paramMap.put("userId", this.getSessionUser().getUserId());
 
-        List<MenuModel> list = new ArrayList<>();
-        List<MenuModel> rootList = mapper.selectList("com.swp.commons.index.mapper.IndexCustomMapper.getMenu", paramMap);
-        for (MenuModel menuModel : rootList) {
-            menuModel.setChildren(getMenu(menuModel.getId(), roleId));
-            list.add(menuModel);
+            List<MenuModel> list = new ArrayList<>();
+            List<MenuModel> rootList = mapper.selectList("com.swp.commons.index.mapper.IndexCustomMapper.getMenu", paramMap);
+            for (MenuModel menuModel : rootList) {
+                menuModel.setChildren(getMenu(menuModel.getId(), roleId));
+                list.add(menuModel);
+            }
+            System.out.println(list);
+            return list;
         }
-        System.out.println(list);
-        return list;
+
     }
 
     public List<MenuModel> getMenu(String pid, String roleId){
@@ -116,6 +130,44 @@ public class IndexController extends BaseController {
         }
         return menuList;
 
+    }
+
+    private List<MenuModel> getMenuFromXml(){
+        List<MenuModel> list = new ArrayList<>();
+
+        try {
+            // 获取XMl输入流
+            InputStream inputStream = this.getClass().getResourceAsStream("/adminMenu.xml");
+            // 创建SAXReader对象reader
+            SAXReader reader = new SAXReader();
+            // 通过reader对象的read方法加载adminMenu.xml文件，获取document对象。
+            Document document = reader.read(inputStream);
+            // 获取根节点
+            Element rootElement = document.getRootElement();
+            // 获取所有的一级子节点
+            List<Element> elements = rootElement.elements();
+            for (Element element : elements) {
+                MenuModel model = new MenuModel();
+                List<MenuModel> childList = new ArrayList<>();
+                model.setName(element.attributeValue("name"));
+                model.setIcon(this.isNull(element.attributeValue("icon")) ? "zmdi zmdi-apps" : element.attributeValue("icon"));
+                List<Element> childElements = element.elements();
+                for (Element childElement : childElements) {
+                    MenuModel childModel = new MenuModel();
+                    childModel.setName(childElement.elementText("name"));
+                    childModel.setUrl(childElement.elementText("url"));
+                    childList.add(childModel);
+                }
+                model.setChildren(childList);
+                list.add(model);
+            }
+
+        } catch (DocumentException e) {
+            logger.error("读取 xml 菜单信息失败");
+            e.printStackTrace();
+        }
+
+        return list;
     }
 
 }

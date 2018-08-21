@@ -182,6 +182,7 @@
 
         <%-- 菜单区 --%>
         <ul id="main-menu" class="main-menu">
+            <%--
             <li>
                 <a class="waves-effect" href="javascript:Tab.addTab('首页','home');">
                     <i class="zmdi zmdi-home"></i>首页
@@ -240,6 +241,7 @@
             <div class="upms-version">
                 &copy;Siwanper Blog V1.0.0
             </div>
+            --%>
         </ul>
         <%-- /菜单区 --%>
     </aside>
@@ -260,7 +262,7 @@
             </ul>
         </div>
         <div class="content_main">
-            <div id="iframe_home" class="iframe_cur">
+            <div id="iframe_home" class="iframe cur">
                 <p><h4>Siwanper</h4></p>
                 <p><b>本项目是一个整合 SpringMVC+Spring+MyBatis（SSM）框架的Demo</b></p>
                 <p><b>拥有高效率便捷开发模式，使开发人员更专注于业务，达到面向业务开发</b></p>
@@ -317,21 +319,20 @@
     }
 
     function loadMenu(roleId) {
-        // Yan左侧菜单数据初始化
-        var menuHtml = "<li><a class='waves-effect' href='javascript:Tab.addTab(\"首页\", \"home\");'><i class='zmdi zmdi-home'></i> 首页</a></li>";
-        $.post('${pageContext.request.contextPath}/' + roleId + '/menu', null, function (data) {
 
-            $.each(data, function (index, item) {
-                menuHtml += "<li class='sub-menu system_menus'><a class='waves-effect'><i class='" + item.icon + "'></i> " + item.name + "</a><ul>";
-                $.each(item.children, function (ids, itm) {
-                    menuHtml += "<li><a class='waves-effect' href='javascript:Tab.addTab(\"" + itm.name + "\", \"${pageContext.request.contextPath}" + itm.url + "\");'>" + itm.name + "</a></li>";
-                });
+        var menuHtml = "<li><a class='waves-effect' href='javascript:Tab.addTab(\"首页\",\"home\");'><i class='zmdi zmdi-home'></i>首页</a></li>";
+        $.post("${pageContext.request.contextPath}/"+roleId+"/menu",null,function (data) {
+            $.each(data,function (index, item) {
+                menuHtml += "<li class='sub-menu system_menus'><a class='waves-effect' href='javascript:;'><i class='"+item.icon+"'></i>"+item.name+"</a><ul>";
+                $.each(item.children,function (idx,itm) {
+                    menuHtml += "<li><a class='waves-effect' href='javascript:Tab.addTab(\""+itm.name+"\",\"${pageContext.request.contextPath}"+itm.url+"\");'>"+itm.name+"</a></li>";
+                })
                 menuHtml += "</ul></li>";
-            });
-            menuHtml += "<li><div class='upms-version'>&copy; YAN FRAME V1.0</div></li>";
-            alert(menuHtml);
-            $('#main-menu').html(menuHtml);
-        });
+            })
+            menuHtml += "<li><div class='upms-version'>&copy;Siwanper Blog</div></li>";
+            $("#main-menu").html(menuHtml);
+        })
+
     }
 </script>
 
