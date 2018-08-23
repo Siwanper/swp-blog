@@ -60,7 +60,7 @@ public class IndexController extends BaseController {
      * @param errorCode 404 500 等一系列错误状态吗
      * @return
      */
-    @RequestMapping("/(errorCode)/error")
+    @RequestMapping("/{errorCode}/error")
     public String error(@PathVariable String errorCode){
         System.out.println(errorCode);
         return "error";
@@ -92,7 +92,6 @@ public class IndexController extends BaseController {
     public List<MenuModel> menu(@PathVariable String roleId) {
 
         if ("admin".equals(this.getSessionUser().getUserType())){
-            System.out.println("getUserType : "+this.getSessionUser().getUserType());
             // 管理员角色在系统xml中读取
             return this.getMenuFromXml();
         } else {
