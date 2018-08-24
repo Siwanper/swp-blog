@@ -20,6 +20,133 @@
     <table id="table"></table>
 </div>
 
+<%-- 用户 --%>
+<div id="addDialog" class="curdDialog" hidden>
+    <div class="container col-md-11" style="margin-top: 10px;margin-left: 55px;display: table">
+        <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+            <div class="col-md-4 text-left" style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
+                <label style="margin-top: 5px;font-size: 14px;color: grey;">用户名:</label>
+            </div>
+            <div class="col-md-7">
+                <div class="form-group">
+                    <input type="text" id="userCode" name="userCode" class="form-control" placeholder="用户名（必填）">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+            <div class="col-md-4 text-left" style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
+                <label style="margin-top: 5px;font-size: 14px;color: grey;">姓名:</label>
+            </div>
+            <div class="col-md-7">
+                <div class="form-group">
+                    <input type="text" id="userName" name="userName" class="form-control" placeholder="姓名（必填）">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+            <div class="col-md-4 text-left" style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
+                <label style="margin-top: 5px;font-size: 14px;color: grey;">密码:</label>
+            </div>
+            <div class="col-md-7">
+                <div class="form-group">
+                    <input type="password" id="userPassword" name="userPassword" class="form-control" placeholder="密码（必填）">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+            <div class="col-md-4 text-left" style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
+                <label style="margin-top: 5px;font-size: 14px;color: grey;">地址:</label>
+            </div>
+            <div class="col-md-7">
+                <div class="form-group">
+                    <input type="text" id="userAddress" name="userAddress" class="form-control" placeholder="地址">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+            <div class="col-md-4 text-left" style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
+                <label style="margin-top: 5px;font-size: 14px;color: grey;">邮箱:</label>
+            </div>
+            <div class="col-md-7">
+                <div class="form-group">
+                    <input type="text" id="userEmail" name="userEmail" class="form-control" placeholder="邮箱">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+            <div class="col-md-4 text-left" style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
+                <label style="margin-top: 5px;font-size: 14px;color: grey;">联系电话:</label>
+            </div>
+            <div class="col-md-7">
+                <div class="form-group">
+                    <input type="text" id="userPhone" name="userPhone" class="form-control" placeholder="联系电话">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+            <div class="col-md-4 text-left" style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
+                <label style="margin-top: 5px;font-size: 14px;color: grey;">出生日期:</label>
+            </div>
+            <div class="col-md-7">
+                <div class="form-group">
+                    <div class="input-group date form_date">
+                        <input id="userBirthday" class="form-control" type="text"
+                               placeholder="请选择日期" readonly> <span
+                            class="input-group-addon"><span
+                            class="glyphicon glyphicon-remove"></span></span> <span
+                            class="input-group-addon"><span
+                            class="glyphicon glyphicon-calendar"></span></span>
+                    </div>
+                    <script type="text/javascript">
+                        //	日历组件选择
+                        $(".form_datetime").datetimepicker({
+                            language : 'zh-CN',
+                            format : "yyyy-mm-dd hh:ii",
+                            autoclose : true,
+                            todayBtn : true,
+                            minuteStep : 10
+                        });
+                        $('.form_date').datetimepicker({
+                            language : 'zh-CN',
+                            format : "yyyy-mm-dd",
+                            todayBtn : true,
+                            autoclose : true,
+                            startView : 2,
+                            minView : 2
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                <div class="col-md-4 text-left"
+                     style="background-color: #D2E9FF; line-height: 26px; vertical-align: middle;">
+                    <label style="margin-top: 5px; font-size: 14px; color: grey;">照片：</label>
+                </div>
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <input id="userPhoto" type="file" style="display:block;">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                <div class="col-md-4 text-left"
+                     style="background-color: #D2E9FF; line-height: 26px; vertical-align: middle;">
+                    <label style="margin-top: 5px; font-size: 14px; color: grey;">有效值：</label>
+                </div>
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <select id="userValid" name="userValid" class="selectpicker">
+                            <option value="true">有效</option>
+                            <option value="false">无效</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 </body>
 
 <script type="text/javascript">
@@ -56,6 +183,71 @@
         });
 
     });
+    // 添加
+    function addAction() {
+        $.confirm({
+            type:'blue',
+            animationSpeed:300,
+            columnClass:'col-md-9 col-md-offset-1',
+            title:'添加用户',
+            content:$('#addDialog').html(),
+            buttons:{
+                confirm: {
+                    text:'保存',
+                    btnClass:'waves-effect waves-button',
+                    action:function () {
+                        $.alert("保存");
+                    }
+                },
+                cancle:{
+                    text:'取消',
+                    btnClass:'waves-effect waves-button'
+                }
+            }
+        });
+    }
+    // 删除
+    function deleteAction() {
+        var rows = $table.bootstrapTable('getSelections');
+        if (rows.length == 0) {
+            $.confirm({
+               title:false,
+               content:'请至少选择一条记录',
+                autoClose:'cancel|3000',
+                backgroundDismiss:true,
+                buttons:{
+                   cancel:{
+                       text:'取消',
+                       btnClass:'waves-effect waves-button'
+                   }
+                }
+            });
+        } else {
+            $.confirm({
+                type:'red',
+                animationSpeed:300,
+                title:false,
+                content:'确认删除该用户吗?',
+                buttons:{
+                    confirm:{
+                        text:'确认',
+                        btnClass:'waves-effect waves-button',
+                        action:function () {
+                            var ids = new Array();
+                            for(var i in rows){
+                                ids.push(rows[i].userId);
+                            }
+                            $.alert('删除：ID='+ids.join('-'));
+                        }
+                    },
+                    cancel: {
+                        text: '取消',
+                        btnClass: 'waves-effect waves-button'
+                    }
+                }
+            })
+        }
+    }
 
 </script>
 

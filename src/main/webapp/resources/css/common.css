@@ -17,3 +17,6 @@ a, a:hover, a:active, a:focus {
     padding: 10px 20px;
 }
 
+.crudDialog {
+    padding: 0 0 2px;
+}

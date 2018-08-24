@@ -28,6 +28,20 @@
                 <value>classpath:mybatis/**/*Mapper.xml</value>
             </list>
         </property>
+        <!-- 配置 mybatis 分页插件-->
+        <property name="plugins">
+            <bean class="com.github.pagehelper.PageInterceptor">
+                <property name="properties">
+                    <value>
+                        helperDialect=mysql
+                        offsetAsPageNum=true
+                        rowBoundsWithCount=true
+                        pageSizeZero=true
+                        reasonable=false
+                    </value>
+                </property>
+            </bean>
+        </property>
     </bean>
 
     <!-- 3 sqlSessionTemplate-->
@@ -37,7 +51,7 @@
 
     <!-- 扫描Mapper -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.swp.module.product.mapper" />
+        <property name="basePackage" value="com.swp" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     </bean>
 
