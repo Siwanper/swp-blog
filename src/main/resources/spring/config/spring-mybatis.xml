@@ -28,6 +28,20 @@
                 <value>classpath:mybatis/**/*Mapper.xml</value>
             </list>
         </property>
+        <!-- 配置 mybatis 分页插件-->
+        <property name="plugins">
+            <bean class="com.github.pagehelper.PageInterceptor">
+                <property name="properties">
+                    <value>
+                        helperDialect=mysql
+                        offsetAsPageNum=true
+                        rowBoundsWithCount=true
+                        pageSizeZero=true
+                        reasonable=false
+                    </value>
+                </property>
+            </bean>
+        </property>
     </bean>
 
     <!-- 3 sqlSessionTemplate-->

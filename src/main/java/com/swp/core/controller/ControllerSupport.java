@@ -82,7 +82,7 @@ public class ControllerSupport extends BaseSupport{
      * @return      PageModel 自定义的分页模型，T 为查询的对象。
      */
     protected <T> PageModel<T> resultPage(List<T> list) {
-        return new PageModel<T>(list);
+        return new PageModel<>(list);
     }
 
     /**

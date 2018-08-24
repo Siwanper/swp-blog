@@ -2,15 +2,14 @@ package com.swp.commons.user.controller;
 
 import com.swp.commons.user.mapper.SysUserMapper;
 import com.swp.commons.user.model.SysUser;
-import com.swp.commons.user.model.SysUserExample;
 import com.swp.core.annotation.LogInject;
 import com.swp.core.annotation.MapperInject;
 import com.swp.core.controller.BaseController;
-import com.swp.core.persistence.DelegateMapper;
+import com.swp.core.model.PageModel;
 import org.slf4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
@@ -34,13 +33,21 @@ public class UserController extends BaseController {
     private Logger logger;
 
     @MapperInject(SysUserMapper.class)
-    private SysUserMapper userMapper;
+    private SysUserMapper mapper;
 
-    @RequestMapping("/getAllUser")
+    @RequestMapping("/manage")
+    public String manage() {
+        return "common/user/manage";
+    }
+
+    @RequestMapping(value = "/list", method = RequestMethod.POST)
     @ResponseBody
-    private List<SysUser> getAllUser(){
-        List<SysUser> users = userMapper.selectByExample(new SysUserExample());
-        return users;
+    public PageModel<SysUser> list(int offset, int limit, String search, String sort, String order) {
+        this.offsetPage(offset, limit);
+        List<SysUser> list = mapper.selectByExample(null);
+        PageModel pageModel = this.resultPage(list);
+        System.out.println(pageModel.getRows());
+        return this.resultPage(list);
     }
 
 
