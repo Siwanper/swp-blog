@@ -13,7 +13,7 @@ import java.util.List;
 
 public class PageModel<T> implements Serializable {
 
-    private static final long serivalVersionUID = 1l;
+    private static final long serialVersionUID = 1L;
 
     /**
      * 总记录数<br>
