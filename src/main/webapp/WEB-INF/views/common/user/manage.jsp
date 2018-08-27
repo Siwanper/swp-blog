@@ -147,6 +147,32 @@
     </div>
 </div>
 
+<%--用户角色--%>
+<div class="modal fade" id="roleModal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop = 'static'>
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                x
+            </button>
+            <h4 id="roleModalTitle" class="modal-title">
+                用户拥有的角色
+            </h4>
+        </div>
+        <div class="modal-body">
+            <div id="roleZtree" class="ztree"></div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">
+                <i class="zmdi zmdi-close"></i>关闭
+            </button>
+            <button id="roleSaveBtn" class="waves-effect btn btn-success btn-sm" style="margin-left: 10px;" type="button" href="javascript:;">
+                <i class="zmdi zmdi-save"></i>保存
+            </button>
+        </div>
+    </div>
+</div>
+
+
 </body>
 
 <script type="text/javascript">
@@ -183,6 +209,33 @@
         });
 
     });
+
+    // 加载用户角色tree结构
+    function loadRoleTree() {
+        var setting = {
+            async : {
+                enable:true,
+                url:'${pageContext.request.contextPath}/common/role/roleCheckedTree',
+                autoParam:['id','pid','name','level'],
+                otherParam:{'userId':userId}
+            },
+            check: {
+                enable:true,
+                chkStyle:'checkbox',
+                chkboxStype:{'Y':'s',"N":'s'}
+            },
+            view:{
+                fontCss:setFontCss
+            }
+        }
+        treeObj = $.fn.zTree.init($('#roleZtree'),setting);
+        // 设置样式
+        function setFontCss(treeId, treeNode) {
+            return treeNode.valid == false ? {color:"red"} : {};
+        };
+        $('#roleModal').modal('show');
+    }
+
     // 添加
     function addAction() {
         $.confirm({
@@ -248,6 +301,34 @@
             })
         }
     }
+    // 用户角色
+    function roleAction() {
+        var rows = $table.bootstrapTable('getSelections');
+        if (rows.length == 0) {
+            $.confirm({
+               title:false,
+               content:'请至少选择一条记录',
+               autoClose:'cancel|3000',
+               backgroundDismiss:true,
+                buttons:{
+                   cancel:{
+                       text:'取消',
+                       btnClass:'waves-effect waves-button'
+                   }
+                }
+            });
+        } else {
+            var row = rows[0];
+            if ('admin' == row.userType) {
+                $.alert('您不能编辑管理员的角色');
+            }else {
+                userId = row.userId;
+                $('#roleModalTitle').html('用户['+row.userName+']拥有的角色');
+                loadRoleTree();
+            }
+        }
+    }
+
 
 </script>
 
