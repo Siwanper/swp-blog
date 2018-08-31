@@ -58,19 +58,36 @@
     var setting = {
         async: {
             enable:true,
-            url:"${pageContext.request.contextPath}/common/role/roleTree",
+            url:"${pageContext.request.contextPath}/commons/role/roleTree",
             autoParam:["id","pid","name","level"]
         },
         view: {
             fontCss:setFontCss,
         },
         callback:{
-            onclick:zTreeOnClick
+            onClick: zTreeOnClick
         }
     };
     treeObj = $.fn.zTree.init($("#ztree"),setting);
     function setFontCss(treeId, treeNode) {
         return treeNode.valid == false ? {color:"red"}:{};
+    }
+
+    var lastSelected;
+    var lastChecked;
+
+    // tree 点击事件
+    function zTreeOnClick(event, treeId, treeNode) {
+        if (0 == treeNode.level) {
+            $("#delete-btn").hide();
+        } else {
+            $("#delete-btn").show();
+        }
+        if (lastSelected != treeNode.id || lastChecked != 'click') {
+            $("#content_iframe").attr("src","${pageContext.request.contextPath}/commons/role/"+treeNode.id+"/edit");
+        }
+        lastSelected = treeNode.id;
+        lastChecked = "click";
     }
 
 </script>
