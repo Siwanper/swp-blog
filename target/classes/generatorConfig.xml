@@ -34,22 +34,22 @@
         </javaTypeResolver>
 
         <!-- 实体类 -->
-        <javaModelGenerator targetPackage="com.swp.commons.role.model" targetProject="${mbg.path}/java">
+        <javaModelGenerator targetPackage="com.swp.commons.menu.model" targetProject="${mbg.path}/java">
             <property name="enableSubPackages" value="false" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
 
         <!-- *Mapper.xml -->
-        <sqlMapGenerator targetPackage="mybatis.common.role" targetProject="${mbg.path}/resources">
+        <sqlMapGenerator targetPackage="mybatis.common.menu" targetProject="${mbg.path}/resources">
             <property name="enableSubPackages" value="false" />
         </sqlMapGenerator>
 
         <!-- *Mapper.java-->
-        <javaClientGenerator targetPackage="com.swp.commons.role.mapper" targetProject="${mbg.path}/java" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="com.swp.commons.menu.mapper" targetProject="${mbg.path}/java" type="XMLMAPPER">
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
 
-        <table schema="" tableName="ROLE_MENU_REL" />
+        <table schema="" tableName="SYS_MENU" />
 
     </context>
 </generatorConfiguration>

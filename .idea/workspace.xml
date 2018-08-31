@@ -10,23 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15c502d6-7e6a-45a6-91a2-3a6adbe8039b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/menu/controller/MenuController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/menu/model/MenuNode.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/role/model/RoleNode.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/common/menu/SysMenuCustomMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/common/role/SysRoleCustomMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/menu/addOrEdit.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/menu/manage.jsp" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swp/commons/role/controller/RoleController.java" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/role/controller/RoleController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/role/manage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/role/manage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/index_jsp.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/login_jsp.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,8 +62,8 @@
       <file leaf-file-name="SysMenuCustomMapper.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/common/menu/SysMenuCustomMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="91" lean-forward="true" selection-start-line="1" selection-start-column="91" selection-end-line="1" selection-end-column="91" />
+            <state relative-caret-position="60">
+              <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding>
                 <marker date="1535707209000" expanded="true" signature="973:1257" ph="SELECT MENU_... SYS_MENU" />
                 <marker date="1535707209000" expanded="true" signature="1348:1415" ph="UPDATE SYS_MENU... " />
@@ -234,7 +219,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="44" />
+    <option name="x" value="56" />
     <option name="y" value="23" />
     <option name="width" value="1686" />
     <option name="height" value="972" />
@@ -768,7 +753,7 @@
       <workItem from="1535336137678" duration="11528000" />
       <workItem from="1535418926377" duration="2645000" />
       <workItem from="1535596245854" duration="10769000" />
-      <workItem from="1535679880023" duration="17693000" />
+      <workItem from="1535679880023" duration="17998000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1531149749898</created>
@@ -868,11 +853,18 @@
       <option name="project" value="LOCAL" />
       <updated>1535363701445</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Siwanper: MenuController">
+      <created>1535707297967</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1535707297967</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193867000" />
+    <option name="totallyTimeSpent" value="194172000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -884,7 +876,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="23" width="1686" height="972" extended-state="0" />
+    <frame x="56" y="23" width="1686" height="972" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -937,7 +929,8 @@
     <MESSAGE value="Siwanper: index complete" />
     <MESSAGE value="Siwanper: UserController" />
     <MESSAGE value="Siwanper: RoleController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Siwanper: RoleController" />
+    <MESSAGE value="Siwanper: MenuController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Siwanper: MenuController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1240,6 +1233,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-143">
           <caret line="13" column="45" lean-forward="false" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1247,6 +1243,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#605#606#0" expanded="false" />
+            <element signature="e#630#631#0" expanded="false" />
+            <element signature="e#666#667#0" expanded="false" />
+            <element signature="e#694#695#0" expanded="false" />
+            <element signature="e#724#725#0" expanded="false" />
+            <element signature="e#750#751#0" expanded="false" />
+            <element signature="e#788#789#0" expanded="false" />
+            <element signature="e#818#819#0" expanded="false" />
+            <element signature="e#849#850#0" expanded="false" />
+            <element signature="e#876#877#0" expanded="false" />
+            <element signature="e#916#917#0" expanded="false" />
+            <element signature="e#948#949#0" expanded="false" />
+            <element signature="e#980#981#0" expanded="false" />
+            <element signature="e#1008#1009#0" expanded="false" />
+            <element signature="e#1050#1051#0" expanded="false" />
+            <element signature="e#1084#1085#0" expanded="false" />
+            <element signature="e#1118#1119#0" expanded="false" />
+            <element signature="e#1149#1150#0" expanded="false" />
+            <element signature="e#1194#1195#0" expanded="false" />
+            <element signature="e#1227#1228#0" expanded="false" />
+            <element signature="e#1262#1263#0" expanded="false" />
+            <element signature="e#1292#1293#0" expanded="false" />
+            <element signature="e#1339#1340#0" expanded="false" />
+            <element signature="e#1377#1378#0" expanded="false" />
+            <element signature="e#1409#1410#0" expanded="false" />
+            <element signature="e#1436#1437#0" expanded="false" />
+            <element signature="e#1477#1478#0" expanded="false" />
+            <element signature="e#1509#1510#0" expanded="false" />
+            <element signature="e#1544#1545#0" expanded="false" />
+            <element signature="e#1574#1575#0" expanded="false" />
+            <element signature="e#1621#1622#0" expanded="false" />
+            <element signature="e#1659#1660#0" expanded="false" />
+            <element signature="e#1692#1693#0" expanded="false" />
+            <element signature="e#1720#1721#0" expanded="false" />
+            <element signature="e#1763#1764#0" expanded="false" />
+            <element signature="e#1797#1798#0" expanded="false" />
+            <element signature="e#1840#1841#0" expanded="false" />
+            <element signature="e#1871#1872#0" expanded="false" />
+            <element signature="e#1927#1928#0" expanded="false" />
+            <element signature="e#1967#1968#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1334,8 +1373,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/common/menu/SysMenuCustomMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="91" lean-forward="true" selection-start-line="1" selection-start-column="91" selection-end-line="1" selection-end-column="91" />
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding>
             <marker date="1535707209000" expanded="true" signature="973:1257" ph="SELECT MENU_... SYS_MENU" />
             <marker date="1535707209000" expanded="true" signature="1348:1415" ph="UPDATE SYS_MENU... " />
