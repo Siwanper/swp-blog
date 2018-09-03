@@ -25,6 +25,19 @@
 
         <div class="container col-xs-11" style="margin-top: 30px; margin-left: 50px; display: table;">
 
+            <c:if test="${menu.menuValid == 'false'}">
+                <div class="row">
+                    <div class="col-xs-11">
+                        <div class="alert alert-warning alert-dismissable" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <strong>注意！</strong> 当前菜单状态是无效，该菜单及其子菜单在系统菜单中将不会显示。
+                        </div>
+                    </div>
+                </div>
+            </c:if>
+
             <div id="noSelDiv" style="display: none;" class="row">
                 <div class="col-xs-11">
                     <div class="alert alert-danger alert-dismissible" role="alert">

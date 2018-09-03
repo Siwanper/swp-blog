@@ -108,6 +108,12 @@ public class MenuController extends BaseController {
         return "common/menu/addOrEdit";
     }
 
+    /**
+     * 保存（添加和修改）
+     *
+     * @param menu
+     * @return
+     */
     @RequestMapping(value = "/save" ,method = RequestMethod.POST)
     @ResponseBody
     @Transactional // 添加事务
@@ -135,6 +141,13 @@ public class MenuController extends BaseController {
         return this.resultMsg(status,"修改成功");
     }
 
+    /**
+     * 删除菜单节点
+     *
+     * @param menuId
+     * @param menuPid
+     * @return
+     */
     @RequestMapping(value = "/delete",method = RequestMethod.POST)
     @ResponseBody
     @Transactional

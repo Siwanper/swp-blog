@@ -89,6 +89,92 @@
         lastSelected = treeNode.id;
         lastChecked = "click";
     }
+    
+    // 添加角色
+    function roleAdd() {
+        var nodes = treeObj.getSelectedNodes();
+        if (nodes.length > 0) {
+            if (lastSelected != nodes[0].id || lastSelected != "add") {
+                $("#content_iframe").attr("src","${pageContext.request.contextPath}/commons/role/"+nodes[0].id+"/add");
+            }
+            lastSelected = nodes[0].id;
+            lastChecked = "add";
+        }else {
+            $.alert("请选择对应的父节点");
+        }
+    }
+
+    // 删除角色
+    function roleDelete() {
+        var nodes = treeObj.getSelectedNodes();
+        if (nodes.length > 0) {
+            $.confirm({
+               type:"red",
+                animationSpeed:300,
+                title:false,
+                content: "确认删除【"+nodes[0].name+"】角色吗？",
+               buttons: {
+                   confirm: {
+                       text: "确认",
+                       btnClass : "waves-effect waves-button",
+                       action : function () {
+                           $.post("${pageContext.request.contextPath}/commons/role/delete",{roleId:nodes[0].id,rolePid:nodes[0].pid},function (data) {
+                               if (data.status == "1") {
+                                   roleParentsNodeRefresh();
+                               }else {
+                                   roleParentNodeRefresh();
+                               }
+                               $.alert(data.msg);
+                           });
+                       }
+                   },
+                   cancle: {
+                       text : "取消",
+                       btnClass: "waves-effect waves-button"
+                   }
+               }
+            });
+        } else {
+            $.alert("请选择对应的父节点");
+        }
+    }
+
+    // 全部刷新
+    function roleAllRefresh() {
+        treeObj.reAsyncChildNodes(null, "refresh");
+        lastChecked = "";
+        lastSelected = "";
+    }
+
+    // 选中 tree 节点 父节点 的父节点刷新
+    function roleParentsNodeRefresh() {
+        var nodes = treeObj.getSelectedNodes();
+        if (nodes.length > 0) {
+            treeObj.reAsyncChildNodes(nodes[0].getParentNode().getParentNode(),"refresh");
+        }
+        lastChecked = "";
+        lastSelected = "";
+    }
+
+    // 选中 tree 节点 父节点刷新
+    function roleParentNodeRefresh() {
+        var nodes = treeObj.getSelectedNodes();
+        if (nodes.length > 0) {
+            treeObj.reAsyncChildNodes(nodes[0].getParentNode(),"refresh");
+        }
+        lastChecked = "";
+        lastSelected = "";
+    }
+
+    // 选中 tree 节点刷新
+    function roleNodeRefresh() {
+        var nodes = treeObj.getSelectedNodes();
+        if (nodes.length > 0) {
+            treeObj.reAsyncChildNodes(nodes[0],"refresh");
+        }
+        lastChecked = "";
+        lastSelected = "";
+    }
 
 </script>
 
