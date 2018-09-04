@@ -1,9 +1,8 @@
 package com.swp.commons.role.controller;
 
+import com.swp.commons.role.mapper.RoleMenuRelMapper;
 import com.swp.commons.role.mapper.SysRoleMapper;
-import com.swp.commons.role.model.RoleNode;
-import com.swp.commons.role.model.SysRole;
-import com.swp.commons.role.model.SysRoleExample;
+import com.swp.commons.role.model.*;
 import com.swp.core.annotation.LogInject;
 import com.swp.core.annotation.MapperInject;
 import com.swp.core.controller.BaseController;
@@ -19,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -152,6 +152,36 @@ public class RoleController extends BaseController {
     private List<RoleNode> getRoleNode(String pid){
         List<RoleNode> roleList = delegateMapper.selectList(NAMESPACE+".getRoleNode",pid);
         return roleList;
+    }
+
+    /**
+     * 保存用户资源菜单
+     *
+     * @param roleId 用户角色Id
+     * @param menuIds 用户资源菜单id
+     * @return
+     */
+    @RequestMapping(value = "/saveRoleMenu",method = RequestMethod.POST)
+    @ResponseBody
+    @Transactional
+    public MsgModel saveRoleMenu(String roleId, String menuIds) {
+        logger.debug("menuIds : "+menuIds);
+        List<String> ids = Arrays.asList(menuIds.split(","));
+        RoleMenuRelMapper relMapper = this.getMapper(RoleMenuRelMapper.class);
+        // 清空之前的数据
+        RoleMenuRelExample example = new RoleMenuRelExample();
+        example.createCriteria().andRoleIdEqualTo(roleId);
+        relMapper.deleteByExample(example);
+        for (String id : ids) {
+            if (!this.isNull(id.trim())){
+                RoleMenuRel roleMenuRel = new RoleMenuRel();
+                roleMenuRel.setRelId(this.getUUID());
+                roleMenuRel.setMenuId(id);
+                roleMenuRel.setRoleId(roleId);
+                relMapper.insertSelective(roleMenuRel);
+            }
+        }
+        return this.resultMsg("资源保存成功");
     }
 
 }
