@@ -72,7 +72,6 @@
     function setFontCss(treeId, treeNode) {
         return treeNode.valid == false ? {color:"red"}:{};
     }
-
     var lastSelected;
     var lastChecked;
 
