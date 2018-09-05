@@ -2,6 +2,8 @@ package com.swp.commons.user.controller;
 
 import com.swp.commons.user.mapper.SysUserMapper;
 import com.swp.commons.user.model.SysUser;
+import com.swp.commons.user.model.SysUserExample;
+import com.swp.commons.user.model.SysUserKey;
 import com.swp.core.annotation.LogInject;
 import com.swp.core.annotation.MapperInject;
 import com.swp.core.controller.BaseController;
@@ -15,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -64,16 +68,78 @@ public class UserController extends BaseController {
     /**
      * 添加用户
      *
-     * @param user
+     * @param model
      * @return
      */
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
+    public MsgModel add(Model model){
+        SysUser user = new SysUser();
+        user.setUserType("general");
+        model.addAttribute("userBean",user);
+        return this.resultMsg("1","添加用户");
+    }
+
+    /**
+     * 编辑用户
+     *
+     * @param userId 用户Id
+     * @param model
+     * @return
+     */
+    @RequestMapping(value = "/edit",method = RequestMethod.POST)
+    @ResponseBody
+    public MsgModel edit(String userId, Model model) {
+        SysUserExample example = new SysUserExample();
+        example.createCriteria().andUserIdEqualTo(userId);
+        List<SysUser> sysUsers = mapper.selectByExample(example);
+        if (sysUsers.size() > 0) {
+            model.addAttribute("userBean",sysUsers.get(0));
+            return this.resultMsg("1","编辑用户");
+        }
+        return null;
+    }
+
+    /**
+     * 保存用户信息
+     *
+     * @param user
+     * @param birthday
+     * @return
+     */
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    @ResponseBody
     @Transactional
-    public MsgModel add(SysUser user){
-//        user.setUserId(this.getUUID());
-//        mapper.insertSelective(user);
-        return this.resultMsg("添加成功");
+    public MsgModel save(SysUser user, String birthday){
+        if (this.isNull(user.getUserId())){ // 添加用户
+            Date birthdayDate = this.dateStr2date(birthday, "yyyy-mm-dd");
+            user.setUserBirthday(birthdayDate);
+            user.setUserJoindate(new Date());
+            user.setUserId(this.getUUID());
+            mapper.insertSelective(user);
+        } else { // 修改用户
+            mapper.updateByPrimaryKeySelective(user);
+        }
+        return this.resultMsg("1","添加成功");
+    }
+
+    /**
+     * 删除用户
+     *
+     * @param ids 需要删除的所有用户ID
+     * @return
+     */
+    @RequestMapping(value = "/delete",method = RequestMethod.POST)
+    @ResponseBody
+    @Transactional
+    public MsgModel delete(String ids) {
+        List<String> idList = Arrays.asList(ids.split(","));
+        for (String id : idList) {
+            SysUserExample example = new SysUserExample();
+            example.createCriteria().andUserIdEqualTo(id);
+            mapper.deleteByExample(example);
+        }
+        return this.resultMsg("1","删除成功");
     }
 
 }

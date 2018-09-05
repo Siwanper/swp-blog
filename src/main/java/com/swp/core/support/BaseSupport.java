@@ -211,6 +211,27 @@ public class BaseSupport {
     }
 
     /**
+     * 日期通过指定格式转换为date类型
+     *
+     * @param dateStr
+     * @param pattern
+     * @return
+     */
+    public Date dateStr2date(String dateStr, String pattern){
+        if (this.isNull(dateStr) || this.isNull(pattern)){
+            return null;
+        }
+        SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+        try {
+            long timestamp = sdf.parse(dateStr).getTime();
+            return new Date(timestamp);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
      *
      * 从指定文件中读取文件内容
      *

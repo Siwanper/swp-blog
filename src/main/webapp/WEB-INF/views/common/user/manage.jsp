@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html;charset=UTF-8"
-         pageEncoding="UTF-8"%>
+         pageEncoding="UTF-8" %>
 <%@ include file="/common/global.jsp" %>
 <%@ include file="/common/include_common.jsp" %>
 <html lang="zh-cn">
@@ -12,147 +12,43 @@
 <body>
 <div id="main">
     <div id="toolbar">
-        <a id="add-btn" class="waves-effect btn btn-info btn-sm" href="javascript:;" ><i class="zmdi zmdi-plus"></i> 新增用户</a>
-        <a class="waves-effect btn btn-warning btn-sm" href="javascript:editAction();" ><i class="zmdi zmdi-edit"></i> 编辑用户</a>
-        <a class="waves-effect btn btn-danger btn-sm" href="javascript:deleteAction();" ><i class="zmdi zmdi-delete"></i> 删除用户</a>
-        <a class="waves-effect btn btn-primary btn-sm" href="javascript:roleAction();" ><i class="zmdi zmdi-male"></i> 用户角色</a>
+        <a class="waves-effect btn btn-info btn-sm" href="javascript:addAction();"><i class="zmdi zmdi-plus"></i> 新增用户</a>
+        <a class="waves-effect btn btn-warning btn-sm" href="javascript:editAction();"><i class="zmdi zmdi-edit"></i>
+            编辑用户</a>
+        <a class="waves-effect btn btn-danger btn-sm" href="javascript:deleteAction();"><i class="zmdi zmdi-delete"></i>
+            删除用户</a>
+        <a class="waves-effect btn btn-primary btn-sm" href="javascript:roleAction();"><i class="zmdi zmdi-male"></i>
+            用户角色</a>
     </div>
     <table id="table"></table>
 </div>
 
-<%-- 用户 --%>
-<div id="addDialog" class="curdDialog" hidden>
-    <form id="dataForm" method="post">
-        <div class="container col-md-11" style="margin-top: 10px;margin-left: 55px;display: table">
-
-            <div class="row" style="margin-top: 10px; margin-bottom: 10px">
-                <div class="col-md-4 text-left" style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
-                    <label style="margin-top: 5px;font-size: 14px;color: grey;">用户名:</label>
-                </div>
-                <div class="col-md-7">
-                    <div class="form-group">
-                        <input type="text" id="userCode" name="userCode" class="form-control" placeholder="用户名（必填）">
-                    </div>
-                </div>
+<div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4>添加用户</h4>
             </div>
-            <div class="row" style="margin-top: 10px; margin-bottom: 10px">
-                <div class="col-md-4 text-left" style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
-                    <label style="margin-top: 5px;font-size: 14px;color: grey;">姓名:</label>
-                </div>
-                <div class="col-md-7">
-                    <div class="form-group">
-                        <input type="text" id="userName" name="userName" class="form-control" placeholder="姓名（必填）">
-                    </div>
-                </div>
+            <div class="modal-body">
+                <iframe id="content_iframe" class="tab_iframe" frameborder="0" width="740" height="800" scrolling="no"></iframe>
             </div>
-            <div class="row" style="margin-top: 10px; margin-bottom: 10px">
-                <div class="col-md-4 text-left" style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
-                    <label style="margin-top: 5px;font-size: 14px;color: grey;">密码:</label>
-                </div>
-                <div class="col-md-7">
-                    <div class="form-group">
-                        <input type="password" id="userPassword" name="userPassword" class="form-control" placeholder="密码（必填）">
-                    </div>
-                </div>
+            <div class="modal-footer">
+                <button class="btn btn-default btn-sm" type="button" data-dismiss="modal"><i
+                        class="zmdi zmdi-close"></i> 关闭
+                </button>
+                <button id="saveUserBtn" class="btn btn-success btn-sm" type="button" href="javascript:;"><i
+                        class="zmdi zmdi-save"></i> 确定
+                </button>
             </div>
-            <div class="row" style="margin-top: 10px; margin-bottom: 10px">
-                <div class="col-md-4 text-left" style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
-                    <label style="margin-top: 5px;font-size: 14px;color: grey;">地址:</label>
-                </div>
-                <div class="col-md-7">
-                    <div class="form-group">
-                        <input type="text" id="userAddress" name="userAddress" class="form-control" placeholder="地址">
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 10px; margin-bottom: 10px">
-                <div class="col-md-4 text-left" style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
-                    <label style="margin-top: 5px;font-size: 14px;color: grey;">邮箱:</label>
-                </div>
-                <div class="col-md-7">
-                    <div class="form-group">
-                        <input type="text" id="userEmail" name="userEmail" class="form-control" placeholder="邮箱">
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 10px; margin-bottom: 10px">
-                <div class="col-md-4 text-left" style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
-                    <label style="margin-top: 5px;font-size: 14px;color: grey;">联系电话:</label>
-                </div>
-                <div class="col-md-7">
-                    <div class="form-group">
-                        <input type="text" id="userPhone" name="userPhone" class="form-control" placeholder="联系电话">
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 10px; margin-bottom: 10px">
-                <div class="col-md-4 text-left" style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
-                    <label style="margin-top: 5px;font-size: 14px;color: grey;">出生日期:</label>
-                </div>
-                <div class="col-md-7">
-                    <div class="form-group">
-                        <div class="input-group date form_date">
-                            <input id="userBirthday" class="form-control" type="text"
-                                   placeholder="请选择日期" readonly> <span
-                                class="input-group-addon"><span
-                                class="glyphicon glyphicon-remove"></span></span> <span
-                                class="input-group-addon"><span
-                                class="glyphicon glyphicon-calendar"></span></span>
-                        </div>
-                        <script type="text/javascript">
-                            //	日历组件选择
-                            $(".form_datetime").datetimepicker({
-                                language : 'zh-CN',
-                                format : "yyyy-mm-dd hh:ii",
-                                autoclose : true,
-                                todayBtn : true,
-                                minuteStep : 10
-                            });
-                            $('.form_date').datetimepicker({
-                                language : 'zh-CN',
-                                format : "yyyy-mm-dd",
-                                todayBtn : true,
-                                autoclose : true,
-                                startView : 2,
-                                minView : 2
-                            });
-                        </script>
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
-                    <div class="col-md-4 text-left"
-                         style="background-color: #D2E9FF; line-height: 26px; vertical-align: middle;">
-                        <label style="margin-top: 5px; font-size: 14px; color: grey;">照片：</label>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="form-group">
-                            <input id="userPhoto" type="file" style="display:block;">
-                        </div>
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
-                    <div class="col-md-4 text-left"
-                         style="background-color: #D2E9FF; line-height: 26px; vertical-align: middle;">
-                        <label style="margin-top: 5px; font-size: 14px; color: grey;">有效值：</label>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="form-group">
-                            <select id="userValid" name="userValid" class="selectpicker">
-                                <option value="true">有效</option>
-                                <option value="false">无效</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </form>
-
+    </div>
 </div>
 
 <%--用户角色--%>
-<div class="modal fade" id="roleModal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop = 'static'>
+<div class="modal fade" id="roleModal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop='static'>
     <div class="modal-dialog">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
@@ -169,8 +65,9 @@
             <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">
                 <i class="zmdi zmdi-close"></i>关闭
             </button>
-            <button id="roleSaveBtn" class="waves-effect btn btn-success btn-sm" style="margin-left: 10px;" type="button" href="javascript:;">
-                <i class="zmdi zmdi-save"></i>保存
+            <button id="roleSaveBtn" class="waves-effect btn btn-success btn-sm" style="margin-left: 10px;"
+                    type="button" href="javascript:;">
+                <i class="zmdi zmdi-save"></i> 保存
             </button>
         </div>
     </div>
@@ -184,8 +81,8 @@
     var $table = $('#table');
     var treeObj;
     var userId;
-    $(function() {
-
+    $(function () {
+        // 列表数据
         $table.bsTable({
             url: '${pageContext.request.contextPath}/commons/user/list',
             idField: 'userCode',// 指定主键列
@@ -202,125 +99,65 @@
                 {field: 'userJoindate', title: '注册时间', align: 'center'},
                 {field: 'userPhoto', title: '照片', align: 'center'},
                 {field: 'userType', title: '用户类型', align: 'center'},
-                {field: 'userValid', title: '是否有效', align: 'center', formatter: function(value, row, index){
-                        if(value){
+                {
+                    field: 'userValid', title: '是否有效', align: 'center', formatter: function (value, row, index) {
+                        if (value) {
                             return '<span class="label label-info">正常</span>';
-                        }else {
+                        } else {
                             return '<span class="label label-danger">失效</span>';
-                        }
-                    }}
-            ]
-        });
-
-        $("#dataForm").bootstrapValidator({
-            container : "popover",
-            message : 'This value is not valid',
-            feedbackIcons : {
-                valid : 'glyphicon glyphicon-ok',
-                invalid : 'glyphicon glyphicon-remove',
-                validating : 'glyphicon glyphicon-refresh'
-            },
-            fields : {
-                'userCode' : {
-                    validators : {
-                        notEmpty : {
-                            message : '用户名称不能为空'
-                        },
-                        stringLength : {
-                            min : 1,
-                            max : 36
-                        },
-                    }
-                },
-                'userName' : {
-                    validators : {
-                        notEmpty : {
-                            message : '姓名不能为空'
-                        },
-                        stringLength : {
-                            min : 1,
-                            max : 36
-                        },
-                    }
-                },
-                'userPassword' : {
-                    validators : {
-                        notEmpty : {
-                            message : '密码不能为空'
-                        },
-                        stringLength : {
-                            min : 1,
-                            max : 36
-                        },
-                    }
-                },
-                'userPhone' : {
-                    validators : {
-                        integer : {
-                            message : '请输入整数类型'
                         }
                     }
                 }
+            ]
+        });
+
+        $("#saveUserBtn").click(function () {
+            var bv = $("#dataForm").data("bootstrapValidator");
+            bv.validate();
+            if(bv.isValid()) {
+                var formData = $("#dataForm").serializeArray();
+                $.post("${pageContext.request.contextPath}/commons/user/save",formData,function (data) {
+                    $table.bootstrapTable("refresh");
+                    resetForm();
+                    $("#addUserModal").modal("hide");
+                    $.alert(data.msg);
+                });
             }
         });
 
-        $("#add-btn").click(function () {
+    });
+
+    function addAction() {
+        $.post("${pageContext.request.contextPath}/commons/user/add",function () {
+            $("#dataForm").refresh();
+            $("#content_iframe").attr("src","${pageContext.request.contextPath}")
+            $("#addUserModal").modal("show");
+        });
+    }
+
+    // 编辑用户
+    function editAction() {
+        var rows = $table.bootstrapTable('getSelections');
+        if (rows.length == 0) {
             $.confirm({
-                type:'blue',
-                animationSpeed:300,
-                columnClass:'col-md-9 col-md-offset-1',
-                title:'添加用户',
-                content:$('#addDialog').html(),
+                title:false,
+                content:'请选择需要编辑的用户',
+                autoClose:'cancel|3000',
+                backgroundDismiss:true,
                 buttons:{
-                    confirm: {
-                        text:'保存',
-                        btnClass:'waves-effect waves-button',
-                        action:function () {
-                            var bv = $("#dataForm").data("bootstrapValidator");
-                            bv.validate();
-                            if(bv.isValid()) {
-                                var formData = $("#dataForm").serializeArray();
-                                $.post("${pageContext.request.contextPath}/commons/user/add",formData,function (data) {
-                                    $table.bootstrapTable("refresh");
-                                    // $.alert(data.msg);
-                                });
-                            }
-                        }
-                    },
-                    cancle:{
+                    cancel:{
                         text:'取消',
                         btnClass:'waves-effect waves-button'
                     }
                 }
             });
-        });
-
-    });
-
-    // 加载用户角色tree结构
-    function loadRoleTree() {
-        var setting = {
-            async : {
-                enable:true,
-                url:'${pageContext.request.contextPath}/common/role/roleCheckedTree',
-                autoParam:['id','pid','name','level'],
-                otherParam:{'userId':userId}
-            },
-            check: {
-                enable:true,
-                chkStyle:'checkbox',
-                chkboxStype:{'Y':'s',"N":'s'}
-            },
-            view:{
-                fontCss:setFontCss
-            }
+        } else {
+            var user = rows[0];
+            $.post("${pageContext.request.contextPath}/commons/user/edit",{"userId":user.userId},function () {
+                $("#dataForm").refresh();
+                $("#addUserModal").modal("show");
+            });
         }
-        treeObj = $.fn.zTree.init($('#roleZtree'),setting);
-        // 设置样式
-        function setFontCss(treeId, treeNode) {
-            return treeNode.valid == false ? {color:"red"} : {};
-        };
-        $('#roleModal').modal('show');
     }
 
     // 删除
@@ -340,6 +177,15 @@
                 }
             });
         } else {
+            var idArray = new Array();
+            for(var i in rows){
+                idArray.push(rows[i].userId);
+                var userType = rows[i].userType;
+                if (userType == "admin"){
+                    $.alert("不能删除admin用户");
+                    return;
+                }
+            }
             $.confirm({
                 type:'red',
                 animationSpeed:300,
@@ -350,11 +196,10 @@
                         text:'确认',
                         btnClass:'waves-effect waves-button',
                         action:function () {
-                            var ids = new Array();
-                            for(var i in rows){
-                                ids.push(rows[i].userId);
-                            }
-                            $.alert('删除：ID='+ids.join('-'));
+                            var ids = idArray.join(',');
+                            $.post('${pageContext.request.contextPath}/commons/user/delete',{'ids':ids},function (data) {
+                                $table.bootstrapTable("refresh");
+                            });
                         }
                     },
                     cancel: {
@@ -365,33 +210,79 @@
             })
         }
     }
+
     // 用户角色
-    function roleAction() {
-        var rows = $table.bootstrapTable('getSelections');
-        if (rows.length == 0) {
-            $.confirm({
-               title:false,
-               content:'请至少选择一条记录',
-               autoClose:'cancel|3000',
-               backgroundDismiss:true,
-                buttons:{
-                   cancel:{
-                       text:'取消',
-                       btnClass:'waves-effect waves-button'
-                   }
-                }
-            });
-        } else {
-            var row = rows[0];
-            if ('admin' == row.userType) {
-                $.alert('您不能编辑管理员的角色');
-            }else {
-                userId = row.userId;
-                $('#roleModalTitle').html('用户['+row.userName+']拥有的角色');
-                loadRoleTree();
-            }
-        }
+    // function roleAction() {
+    //     var rows = $table.bootstrapTable('getSelections');
+    //     if (rows.length == 0) {
+    //         $.confirm({
+    //            title:false,
+    //            content:'请至少选择一条记录',
+    //            autoClose:'cancel|3000',
+    //            backgroundDismiss:true,
+    //             buttons:{
+    //                cancel:{
+    //                    text:'取消',
+    //                    btnClass:'waves-effect waves-button'
+    //                }
+    //             }
+    //         });
+    //     } else {
+    //         var row = rows[0];
+    //         if ('admin' == row.userType) {
+    //             $.alert('您不能编辑管理员的角色');
+    //         }else {
+    //             userId = row.userId;
+    //             $('#roleModalTitle').html('用户['+row.userName+']拥有的角色');
+    //             loadRoleTree();
+    //         }
+    //     }
+    // }
+
+    // 加载用户角色tree结构
+    <%--function loadRoleTree() {--%>
+    <%--var setting = {--%>
+    <%--async : {--%>
+    <%--enable:true,--%>
+    <%--url:'${pageContext.request.contextPath}/common/role/roleCheckedTree',--%>
+    <%--autoParam:['id','pid','name','level'],--%>
+    <%--otherParam:{'userId':userId}--%>
+    <%--},--%>
+    <%--check: {--%>
+    <%--enable:true,--%>
+    <%--chkStyle:'checkbox',--%>
+    <%--chkboxStype:{'Y':'s',"N":'s'}--%>
+    <%--},--%>
+    <%--view:{--%>
+    <%--fontCss:setFontCss--%>
+    <%--}--%>
+    <%--}--%>
+    <%--treeObj = $.fn.zTree.init($('#roleZtree'),setting);--%>
+    <%--// 设置样式--%>
+    <%--function setFontCss(treeId, treeNode) {--%>
+    <%--return treeNode.valid == false ? {color:"red"} : {};--%>
+    <%--};--%>
+    <%--$('#roleModal').modal('show');--%>
+    <%--}--%>
+
+    // 重置表单
+    function resetForm() {
+        // 清空 form 表单值
+        $('#userCode').val('');
+        $('#userName').val('');
+        $('#userPassword').val('');
+        $('#userAddress').val('');
+        $('#userEmail').val('');
+        $("#userPhone").val("");
+        $('#userBirthday').val('');
+        $('#userPhoto').val('');
+        $('#userValid').selectpicker('val', 'true');
+
+        // 验证销毁
+        $("#dataForm").data('bootstrapValidator').destroy();
+        $('#dataForm').data('bootstrapValidator', null);
     }
+
 
 
 </script>
