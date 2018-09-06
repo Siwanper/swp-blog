@@ -33,15 +33,7 @@
                 <h4>添加用户</h4>
             </div>
             <div class="modal-body">
-                <iframe id="content_iframe" class="tab_iframe" frameborder="0" width="740" height="800" scrolling="no"></iframe>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-default btn-sm" type="button" data-dismiss="modal"><i
-                        class="zmdi zmdi-close"></i> 关闭
-                </button>
-                <button id="saveUserBtn" class="btn btn-success btn-sm" type="button" href="javascript:;"><i
-                        class="zmdi zmdi-save"></i> 确定
-                </button>
+                <iframe id="content_iframe" class="tab_iframe" frameborder="0" width="100%" height="500"></iframe>
             </div>
         </div>
     </div>
@@ -50,25 +42,26 @@
 <%--用户角色--%>
 <div class="modal fade" id="roleModal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop='static'>
     <div class="modal-dialog">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                x
-            </button>
-            <h4 id="roleModalTitle" class="modal-title">
-                用户拥有的角色
-            </h4>
-        </div>
-        <div class="modal-body">
-            <div id="roleZtree" class="ztree"></div>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">
-                <i class="zmdi zmdi-close"></i>关闭
-            </button>
-            <button id="roleSaveBtn" class="waves-effect btn btn-success btn-sm" style="margin-left: 10px;"
-                    type="button" href="javascript:;">
-                <i class="zmdi zmdi-save"></i> 保存
-            </button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    x
+                </button>
+                <h4 id="roleModalTitle" class="modal-title">
+                    用户拥有的角色
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div id="roleZtree" class="ztree"></div>
+            </div>
+            <div class="modal-footer">
+                <button id="roleCloseBtn" class="btn btn-default btn-sm" type="button" data-dismiss="modal"><i
+                        class="zmdi zmdi-close"></i>关闭
+                </button>
+                <button id="saveRoleBtn" class="btn btn-success btn-sm" type="button" href="javascript:;"><i
+                        class="zmdi zmdi-save"></i>保存
+                </button>
+            </div>
         </div>
     </div>
 </div>
@@ -111,28 +104,25 @@
             ]
         });
 
-        $("#saveUserBtn").click(function () {
-            var bv = $("#dataForm").data("bootstrapValidator");
-            bv.validate();
-            if(bv.isValid()) {
-                var formData = $("#dataForm").serializeArray();
-                $.post("${pageContext.request.contextPath}/commons/user/save",formData,function (data) {
-                    $table.bootstrapTable("refresh");
-                    resetForm();
-                    $("#addUserModal").modal("hide");
-                    $.alert(data.msg);
-                });
-            }
+        $("#saveRoleBtn").click(function () {
+           var nodes = treeObj.getCheckedNodes();
+           var idArray = new Array();
+           $.map(nodes,function (item,index) {
+               idArray.push(item.id);
+           });
+           var ids = idArray.join(",");
+           $.post("${pageContext.request.contextPath}/commons/user/saveUserRole",{"ids":ids,"userId":userId},function (data) {
+               $("#roleModal").modal("hide");
+               $.alert(data.msg);
+           });
         });
-
     });
 
+
+
     function addAction() {
-        $.post("${pageContext.request.contextPath}/commons/user/add",function () {
-            $("#dataForm").refresh();
-            $("#content_iframe").attr("src","${pageContext.request.contextPath}")
-            $("#addUserModal").modal("show");
-        });
+        $("#content_iframe").attr("src","${pageContext.request.contextPath}/commons/user/add");
+        $("#addUserModal").modal("show");
     }
 
     // 编辑用户
@@ -153,10 +143,14 @@
             });
         } else {
             var user = rows[0];
-            $.post("${pageContext.request.contextPath}/commons/user/edit",{"userId":user.userId},function () {
-                $("#dataForm").refresh();
+            if (user.userType == "admin"){
+                $.alert("不能编辑admin用户");
+                return;
+            }else {
+                $("#content_iframe").attr("src","${pageContext.request.contextPath}/commons/user/"+user.userId+"/edit");
                 $("#addUserModal").modal("show");
-            });
+            }
+
         }
     }
 
@@ -212,58 +206,59 @@
     }
 
     // 用户角色
-    // function roleAction() {
-    //     var rows = $table.bootstrapTable('getSelections');
-    //     if (rows.length == 0) {
-    //         $.confirm({
-    //            title:false,
-    //            content:'请至少选择一条记录',
-    //            autoClose:'cancel|3000',
-    //            backgroundDismiss:true,
-    //             buttons:{
-    //                cancel:{
-    //                    text:'取消',
-    //                    btnClass:'waves-effect waves-button'
-    //                }
-    //             }
-    //         });
-    //     } else {
-    //         var row = rows[0];
-    //         if ('admin' == row.userType) {
-    //             $.alert('您不能编辑管理员的角色');
-    //         }else {
-    //             userId = row.userId;
-    //             $('#roleModalTitle').html('用户['+row.userName+']拥有的角色');
-    //             loadRoleTree();
-    //         }
-    //     }
-    // }
+    function roleAction() {
+        var rows = $table.bootstrapTable('getSelections');
+        if (rows.length == 0) {
+            $.confirm({
+               title:false,
+               content:'请至少选择一条记录',
+               autoClose:'cancel|3000',
+               backgroundDismiss:true,
+                buttons:{
+                   cancel:{
+                       text:'取消',
+                       btnClass:'waves-effect waves-button'
+                   }
+                }
+            });
+        } else {
+            var row = rows[0];
+            if ('admin' == row.userType) {
+                $.alert('您不能编辑管理员的角色');
+            }else {
+                userId = row.userId;
+                $('#roleModalTitle').html('用户['+row.userName+']拥有的角色');
+                loadRoleTree();
+            }
+        }
+    }
 
     // 加载用户角色tree结构
-    <%--function loadRoleTree() {--%>
-    <%--var setting = {--%>
-    <%--async : {--%>
-    <%--enable:true,--%>
-    <%--url:'${pageContext.request.contextPath}/common/role/roleCheckedTree',--%>
-    <%--autoParam:['id','pid','name','level'],--%>
-    <%--otherParam:{'userId':userId}--%>
-    <%--},--%>
-    <%--check: {--%>
-    <%--enable:true,--%>
-    <%--chkStyle:'checkbox',--%>
-    <%--chkboxStype:{'Y':'s',"N":'s'}--%>
-    <%--},--%>
-    <%--view:{--%>
-    <%--fontCss:setFontCss--%>
-    <%--}--%>
-    <%--}--%>
-    <%--treeObj = $.fn.zTree.init($('#roleZtree'),setting);--%>
-    <%--// 设置样式--%>
-    <%--function setFontCss(treeId, treeNode) {--%>
-    <%--return treeNode.valid == false ? {color:"red"} : {};--%>
-    <%--};--%>
-    <%--$('#roleModal').modal('show');--%>
-    <%--}--%>
+    function loadRoleTree() {
+        var setting = {
+            async: {
+                enable: true,
+                url: '${pageContext.request.contextPath}/commons/role/roleCheckedTree',
+                autoParam: ['id', 'pid', 'name', 'level'],
+                otherParam: {'userId': userId}
+            },
+            check: {
+                enable: true,
+                chkStyle: 'checkbox',
+                chkboxStype: {'Y': 's', "N": 's'}
+            },
+            view: {
+                fontCss: setFontCss
+            }
+        }
+        treeObj = $.fn.zTree.init($('#roleZtree'), setting);
+
+        // 设置样式
+        function setFontCss(treeId, treeNode) {
+            return treeNode.valid == false ? {color: "red"} : {};
+        };
+        $('#roleModal').modal('show');
+    }
 
     // 重置表单
     function resetForm() {
@@ -277,12 +272,13 @@
         $('#userBirthday').val('');
         $('#userPhoto').val('');
         $('#userValid').selectpicker('val', 'true');
-
-        // 验证销毁
-        $("#dataForm").data('bootstrapValidator').destroy();
-        $('#dataForm').data('bootstrapValidator', null);
     }
 
+    function refreshPage() {
+        $table.bootstrapTable("refresh");
+        resetForm();
+        $("#addUserModal").modal("hide");
+    }
 
 
 </script>

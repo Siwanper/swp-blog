@@ -17,143 +17,157 @@
 </head>
 <body>
 
-<form id="dataForm" method="post" style="margin-left: 20px">
-    <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
-        <div class="col-md-4"
-             style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
-            <label style="margin-top: 5px;font-size: 14px;color: grey;">用户名:</label>
-        </div>
-        <div class="col-md-7">
-            <div class="form-group">
-                <input type="text" id="userCode" name="userCode" class="form-control"
-                       placeholder="用户名（必填）" value="${userBean.userCode}">
-            </div>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 10px; margin-bottom: 10px">
-        <div class="col-md-4 text-left"
-             style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
-            <label style="margin-top: 5px;font-size: 14px;color: grey;">姓名:</label>
-        </div>
-        <div class="col-md-7">
-            <div class="form-group">
-                <input type="text" id="userName" name="userName" class="form-control"
-                       placeholder="姓名（必填）" value="${userBean.userName}">
-            </div>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 10px; margin-bottom: 10px">
-        <div class="col-md-4 text-left"
-             style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
-            <label style="margin-top: 5px;font-size: 14px;color: grey;">密码:</label>
-        </div>
-        <div class="col-md-7">
-            <div class="form-group">
-                <input type="password" id="userPassword" name="userPassword" class="form-control"
-                       placeholder="密码（必填）" value="${userBean.userPassword}">
-            </div>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 10px; margin-bottom: 10px">
-        <div class="col-md-4 text-left"
-             style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
-            <label style="margin-top: 5px;font-size: 14px;color: grey;">地址:</label>
-        </div>
-        <div class="col-md-7">
-            <div class="form-group">
-                <input type="text" id="userAddress" name="userAddress" class="form-control"
-                       placeholder="地址" value="${userBean.userAddress}">
-            </div>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 10px; margin-bottom: 10px">
-        <div class="col-md-4 text-left"
-             style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
-            <label style="margin-top: 5px;font-size: 14px;color: grey;">邮箱:</label>
-        </div>
-        <div class="col-md-7">
-            <div class="form-group">
-                <input type="text" id="userEmail" name="userEmail" class="form-control"
-                       placeholder="邮箱" value="${userBean.userEmail}">
-            </div>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 10px; margin-bottom: 10px">
-        <div class="col-md-4 text-left"
-             style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
-            <label style="margin-top: 5px;font-size: 14px;color: grey;">联系电话:</label>
-        </div>
-        <div class="col-md-7">
-            <div class="form-group">
-                <input type="text" id="userPhone" name="userPhone" class="form-control"
-                       placeholder="联系电话" value="${userBean.userPhone}">
-            </div>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 10px; margin-bottom: 10px">
-        <div class="col-md-4 text-left"
-             style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
-            <label style="margin-top: 5px;font-size: 14px;color: grey;">出生日期:</label>
-        </div>
-        <div class="col-md-7">
-            <div class="form-group">
-                <div class="input-group date form_date">
-                    <input id="userBirthday" class="form-control" type="text"
-                           placeholder="请选择日期" name="birthday" value="${userBean.userBirthday}" readonly> <span
-                        class="input-group-addon"><span
-                        class="glyphicon glyphicon-remove"></span></span> <span
-                        class="input-group-addon"><span
-                        class="glyphicon glyphicon-calendar"></span></span>
+    <form id="dataForm" method="post" style="margin-left: 20px">
+        <div class="container col-xs-11-11">
+            <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                <div class="col-xs-4"
+                     style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
+                    <label style="margin-top: 5px;font-size: 14px;color: grey;">用户名:</label>
                 </div>
-                <script type="text/javascript">
-                    //	日历组件选择
-                    $(".form_datetime").datetimepicker({
-                        language: 'zh-CN',
-                        format: "yyyy-mm-dd hh:ii",
-                        autoclose: true,
-                        todayBtn: true,
-                        minuteStep: 10
-                    });
-                    $('.form_date').datetimepicker({
-                        language: 'zh-CN',
-                        format: "yyyy-mm-dd",
-                        todayBtn: true,
-                        autoclose: true,
-                        startView: 2,
-                        minView: 2
-                    });
-                </script>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
-            <div class="col-md-4 text-left"
-                 style="background-color: #D2E9FF; line-height: 26px; vertical-align: middle;">
-                <label style="margin-top: 5px; font-size: 14px; color: grey;">照片：</label>
-            </div>
-            <div class="col-md-7">
-                <div class="form-group">
-                    <input id="userPhoto" type="file" style="display:block;">
+                <div class="col-xs-7">
+                    <div class="form-group">
+                        <input type="text" id="userCode" name="userCode" class="form-control"
+                               placeholder="用户名（必填）" value="${userBean.userCode}">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
-            <div class="col-md-4 text-left"
-                 style="background-color: #D2E9FF; line-height: 26px; vertical-align: middle;">
-                <label style="margin-top: 5px; font-size: 14px; color: grey;" value="${userBean.userValid}">有效值：</label>
-            </div>
-            <div class="col-md-7">
-                <div class="form-group">
-                    <select id="userValid" name="userValid" class="selectpicker">
-                        <option value="true">有效</option>
-                        <option value="false">无效</option>
-                    </select>
+            <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+                <div class="col-xs-4 text-left"
+                     style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
+                    <label style="margin-top: 5px;font-size: 14px;color: grey;">姓名:</label>
+                </div>
+                <div class="col-xs-7">
+                    <div class="form-group">
+                        <input type="text" id="userName" name="userName" class="form-control"
+                               placeholder="姓名（必填）" value="${userBean.userName}">
+                    </div>
                 </div>
             </div>
+            <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+                <div class="col-xs-4 text-left"
+                     style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
+                    <label style="margin-top: 5px;font-size: 14px;color: grey;">密码:</label>
+                </div>
+                <div class="col-xs-7">
+                    <div class="form-group">
+                        <input type="password" id="userPassword" name="userPassword" class="form-control"
+                               placeholder="密码（必填）" value="${userBean.userPassword}">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+                <div class="col-xs-4 text-left"
+                     style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
+                    <label style="margin-top: 5px;font-size: 14px;color: grey;">地址:</label>
+                </div>
+                <div class="col-xs-7">
+                    <div class="form-group">
+                        <input type="text" id="userAddress" name="userAddress" class="form-control"
+                               placeholder="地址" value="${userBean.userAddress}">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+                <div class="col-xs-4 text-left"
+                     style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
+                    <label style="margin-top: 5px;font-size: 14px;color: grey;">邮箱:</label>
+                </div>
+                <div class="col-xs-7">
+                    <div class="form-group">
+                        <input type="text" id="userEmail" name="userEmail" class="form-control"
+                               placeholder="邮箱" value="${userBean.userEmail}">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+                <div class="col-xs-4 text-left"
+                     style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
+                    <label style="margin-top: 5px;font-size: 14px;color: grey;">联系电话:</label>
+                </div>
+                <div class="col-xs-7">
+                    <div class="form-group">
+                        <input type="text" id="userPhone" name="userPhone" class="form-control"
+                               placeholder="联系电话" value="${userBean.userPhone}">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+                <div class="col-xs-4 text-left"
+                     style="background-color: #D2E9FF; line-height: 26px;vertical-align: middle">
+                    <label style="margin-top: 5px;font-size: 14px;color: grey;">出生日期:</label>
+                </div>
+                <div class="col-xs-7">
+                    <div class="form-group">
+                        <div class="input-group date form_date">
+                            <input id="userBirthday" class="form-control" type="text"
+                                   placeholder="请选择日期" name="birthday" value="${userBean.userBirthday}" readonly> <span
+                                class="input-group-addon"><span
+                                class="glyphicon glyphicon-remove"></span></span> <span
+                                class="input-group-addon"><span
+                                class="glyphicon glyphicon-calendar"></span></span>
+                        </div>
+                        <script type="text/javascript">
+                            //	日历组件选择
+                            $(".form_datetime").datetimepicker({
+                                language: 'zh-CN',
+                                format: "yyyy-mm-dd hh:ii",
+                                autoclose: true,
+                                todayBtn: true,
+                                minuteStep: 10
+                            });
+                            $('.form_date').datetimepicker({
+                                language: 'zh-CN',
+                                format: "yyyy-mm-dd",
+                                todayBtn: true,
+                                autoclose: true,
+                                startView: 2,
+                                minView: 2
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                <div class="col-xs-4 text-left"
+                         style="background-color: #D2E9FF; line-height: 26px; vertical-align: middle;">
+                    <label style="margin-top: 5px; font-size: 14px; color: grey;">照片：</label>
+                </div>
+                <div class="col-xs-7">
+                    <div class="form-group">
+                        <input id="userPhoto" type="file" style="display:block;">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                <div class="col-xs-4 text-left"
+                         style="background-color: #D2E9FF; line-height: 26px; vertical-align: middle;">
+                    <label style="margin-top: 5px; font-size: 14px; color: grey;" value="${userBean.userValid}">有效值：</label>
+                </div>
+                <div class="col-xs-7">
+                    <div class="form-group">
+                        <select id="userValid" name="userValid" class="selectpicker">
+                            <option value="true">有效</option>
+                            <option value="false">无效</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px; margin-bottom: 10px; left:50%; position: absolute;">
+                <button id="saveUserBtn" class="waves-effect btn btn-success" style="width: 150px; margin-left: -75px"
+                        type="button" href="javascript:;" >
+                    <i class="zmdi zmdi-save"></i> 保存
+                </button>
+            </div>
+
+            <div class="row" style="margin-top: 10px; margin-bottom: 10px; left:50%; position: absolute;">
+                <input type="hidden" name="userType" value="${userBean.userType}"/>
+                <input type="hidden" name="userId" value="${userBean.userId}"/>
+                <%--<input type="hidden" name="userJoindate" value="${userBean.userJoindate}"/>--%>
+            </div>
+
         </div>
-    </div>
-</form>
+    </form>
+
 </body>
 
 <script type="text/javascript">
@@ -210,7 +224,24 @@
                 }
             }
         });
+
+        $("#saveUserBtn").click(function () {
+            var bv = $("#dataForm").data("bootstrapValidator");
+            bv.validate();
+            if(bv.isValid()) {
+                var formData = $("#dataForm").serializeArray();
+                $.post("${pageContext.request.contextPath}/commons/user/save",formData,function (data) {
+                    parent.refreshPage();
+                    $.alert(data.msg);
+                    // 验证销毁
+                    $("#dataForm").data('bootstrapValidator').destroy();
+                    $('#dataForm').data('bootstrapValidator', null);
+                });
+            }
+        });
     });
+
+
 </script>
 
 

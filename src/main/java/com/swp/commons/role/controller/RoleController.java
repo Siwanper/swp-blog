@@ -17,9 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * 描述:
@@ -66,6 +64,32 @@ public class RoleController extends BaseController {
         List<RoleNode> rootList = delegateMapper.selectList(NAMESPACE+".getRoleNode",id);
         for (RoleNode roleNode : rootList) {
             roleNode.setChildren(getRoleNode(roleNode.getId()));
+            nodeList.add(roleNode);
+        }
+        return nodeList;
+    }
+
+    /**
+     * 获取角色 tree check结构，给用户管理提供支持
+     *
+     * @param id
+     * @param userId
+     * @return
+     */
+    @RequestMapping(value = "/roleCheckedTree",method = RequestMethod.POST)
+    @ResponseBody
+    public List<RoleNode> getRoleCheckedTree(String id, String userId) {
+        if (this.isNull(id)) {
+            id = "00000000000000000000000000000000";
+        }
+        Map map = new HashMap();
+        map.put("roleId",id);
+        map.put("userId",userId);
+
+        List<RoleNode> nodeList = new ArrayList<>();
+        List<RoleNode> rootList = delegateMapper.selectList(NAMESPACE+".getRoleCheckedNode",map);
+        for (RoleNode roleNode : rootList) {
+            roleNode.setChildren(getRoleCheckedNode(roleNode.getId(),userId));
             nodeList.add(roleNode);
         }
         return nodeList;
@@ -151,6 +175,20 @@ public class RoleController extends BaseController {
      */
     private List<RoleNode> getRoleNode(String pid){
         List<RoleNode> roleList = delegateMapper.selectList(NAMESPACE+".getRoleNode",pid);
+        return roleList;
+    }
+
+    /**
+     * 角色 tree check 结构加载 给用户管理提供支持
+     * @param pid
+     * @param userId
+     * @return
+     */
+    private List<RoleNode> getRoleCheckedNode(String pid, String userId){
+        Map map = new HashMap();
+        map.put("roleId",pid);
+        map.put("userId",userId);
+        List<RoleNode> roleList = delegateMapper.selectList(NAMESPACE+".getRoleCheckedNode",map);
         return roleList;
     }
 

@@ -1,10 +1,12 @@
 com/swp/commons/menu/model/SysMenuExample$GeneratedCriteria.class
+com/swp/commons/user/model/UserRoleRelExample$Criteria.class
 com/swp/commons/index/model/MenuModel.class
 com/swp/commons/login/model/LoginModel.class
 com/swp/commons/menu/model/SysMenuExample.class
 com/swp/commons/menu/model/SysMenuExample$Criterion.class
 com/swp/commons/menu/controller/MenuController.class
 com/swp/core/controller/ControllerSupport.class
+com/swp/commons/user/model/UserRoleRelExample$GeneratedCriteria.class
 com/swp/commons/user/model/SysUserExample$GeneratedCriteria.class
 com/swp/module/product/mapper/TbProductMapper.class
 com/swp/commons/user/mapper/SysUserMapper.class
@@ -12,6 +14,7 @@ com/swp/core/aspect/LogAspect.class
 com/swp/commons/user/model/SysUser.class
 com/swp/core/injector/LogInjector.class
 com/swp/core/annotation/MapperInject.class
+com/swp/commons/user/model/UserRoleRelExample.class
 com/swp/core/model/PageModel.class
 com/swp/core/injector/MapperInjector.class
 com/swp/core/support/BaseSupport.class
@@ -19,10 +22,12 @@ com/swp/commons/menu/model/MenuNode.class
 com/swp/commons/menu/model/SysMenu.class
 com/swp/commons/index/controller/IndexController.class
 com/swp/core/interceptor/LoginInterceptor.class
+com/swp/commons/user/mapper/UserRoleRelMapper.class
 com/swp/core/injector/LogInjector$1.class
 com/swp/core/persistence/DelegateMapper.class
 com/swp/commons/user/model/SysUserExample$Criteria.class
 com/swp/module/product/controller/ProductController.class
+com/swp/commons/user/model/UserRoleRel.class
 com/swp/module/product/model/TbProductExample.class
 com/swp/commons/login/controller/LoginController.class
 com/swp/commons/user/controller/UserController.class
@@ -39,6 +44,7 @@ com/swp/commons/role/model/RoleNode.class
 com/swp/core/controller/BaseController.class
 com/swp/commons/user/model/SysUserKey.class
 com/swp/core/annotation/LogInject.class
+com/swp/commons/user/model/UserRoleRelExample$Criterion.class
 com/swp/module/product/model/TbProductExample$GeneratedCriteria.class
 com/swp/module/product/model/TbProductExample$Criterion.class
 com/swp/commons/menu/mapper/SysMenuMapper.class
