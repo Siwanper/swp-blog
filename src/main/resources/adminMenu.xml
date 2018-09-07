@@ -38,7 +38,7 @@
         </menuItem>
         <menuItem>
             <name>API帮助文档</name>
-            <url>/resouces/javadocs/index.html</url>
+            <url>/resources/javadocs/doc/index.html</url>
         </menuItem>
     </menu>
 </adminMenu>

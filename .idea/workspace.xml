@@ -11,34 +11,306 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15c502d6-7e6a-45a6-91a2-3a6adbe8039b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/controller/LoggingController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/mapper/LoggingEventExceptionMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/mapper/LoggingEventMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/mapper/LoggingEventPropertyMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEvent.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEventExample.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEventException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEventExceptionExample.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEventExceptionKey.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEventProperty.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEventPropertyExample.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEventPropertyKey.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/common/logging/LoggingEventExceptionMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/common/logging/LoggingEventMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/common/logging/LoggingEventPropertyMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/logging/manage.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/allclasses-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/allclasses-noframe.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/index/controller/IndexController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/index/controller/class-use/IndexController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/index/controller/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/index/controller/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/index/controller/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/index/controller/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/index/model/MenuModel.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/index/model/class-use/MenuModel.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/index/model/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/index/model/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/index/model/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/index/model/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/controller/LoggingController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/controller/class-use/LoggingController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/controller/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/controller/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/controller/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/controller/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/mapper/LoggingEventExceptionMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/mapper/LoggingEventMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/mapper/LoggingEventPropertyMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/mapper/class-use/LoggingEventExceptionMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/mapper/class-use/LoggingEventMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/mapper/class-use/LoggingEventPropertyMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/mapper/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/mapper/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/mapper/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/mapper/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEvent.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventException.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventExceptionExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventExceptionExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventExceptionExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventExceptionExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventExceptionKey.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventProperty.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventPropertyExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventPropertyExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventPropertyExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventPropertyExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/LoggingEventPropertyKey.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEvent.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventException.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventExceptionExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventExceptionExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventExceptionExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventExceptionExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventExceptionKey.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventProperty.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventPropertyExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventPropertyExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventPropertyExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventPropertyExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/class-use/LoggingEventPropertyKey.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/logging/model/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/login/controller/LoginController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/login/controller/class-use/LoginController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/login/controller/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/login/controller/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/login/controller/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/login/controller/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/login/model/LoginModel.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/login/model/LoginUser.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/login/model/class-use/LoginModel.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/login/model/class-use/LoginUser.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/login/model/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/login/model/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/login/model/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/login/model/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/controller/MenuController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/controller/class-use/MenuController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/controller/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/controller/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/controller/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/controller/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/mapper/SysMenuMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/mapper/class-use/SysMenuMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/mapper/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/mapper/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/mapper/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/mapper/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/MenuNode.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/SysMenu.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/SysMenuExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/SysMenuExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/SysMenuExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/SysMenuExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/class-use/MenuNode.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/class-use/SysMenu.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/class-use/SysMenuExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/class-use/SysMenuExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/class-use/SysMenuExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/class-use/SysMenuExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/menu/model/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/controller/RoleController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/controller/class-use/RoleController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/controller/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/controller/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/controller/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/controller/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/mapper/RoleMenuRelMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/mapper/SysRoleMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/mapper/class-use/RoleMenuRelMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/mapper/class-use/SysRoleMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/mapper/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/mapper/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/mapper/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/mapper/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/RoleMenuRel.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/RoleMenuRelExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/RoleMenuRelExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/RoleMenuRelExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/RoleMenuRelExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/RoleNode.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/SysRole.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/SysRoleExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/SysRoleExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/SysRoleExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/SysRoleExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/class-use/RoleMenuRel.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/class-use/RoleMenuRelExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/class-use/RoleMenuRelExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/class-use/RoleMenuRelExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/class-use/RoleMenuRelExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/class-use/RoleNode.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/class-use/SysRole.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/class-use/SysRoleExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/class-use/SysRoleExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/class-use/SysRoleExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/class-use/SysRoleExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/role/model/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/controller/UserController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/controller/class-use/UserController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/controller/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/controller/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/controller/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/controller/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/mapper/SysUserMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/mapper/UserRoleRelMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/mapper/class-use/SysUserMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/mapper/class-use/UserRoleRelMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/mapper/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/mapper/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/mapper/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/mapper/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/SysUser.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/SysUserExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/SysUserExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/SysUserExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/SysUserExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/SysUserKey.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/UserRoleRel.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/UserRoleRelExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/UserRoleRelExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/UserRoleRelExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/UserRoleRelExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/class-use/SysUser.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/class-use/SysUserExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/class-use/SysUserExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/class-use/SysUserExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/class-use/SysUserExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/class-use/SysUserKey.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/class-use/UserRoleRel.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/class-use/UserRoleRelExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/class-use/UserRoleRelExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/class-use/UserRoleRelExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/class-use/UserRoleRelExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/commons/user/model/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/annotation/LogInject.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/annotation/MapperInject.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/annotation/class-use/LogInject.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/annotation/class-use/MapperInject.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/annotation/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/annotation/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/annotation/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/annotation/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/aspect/LogAspect.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/aspect/class-use/LogAspect.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/aspect/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/aspect/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/aspect/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/aspect/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/controller/BaseController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/controller/ControllerSupport.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/controller/class-use/BaseController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/controller/class-use/ControllerSupport.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/controller/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/controller/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/controller/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/controller/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/filter/LoginFilter.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/filter/class-use/LoginFilter.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/filter/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/filter/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/filter/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/filter/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/injector/LogInjector.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/injector/MapperInjector.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/injector/class-use/LogInjector.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/injector/class-use/MapperInjector.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/injector/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/injector/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/injector/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/injector/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/interceptor/LoginInterceptor.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/interceptor/class-use/LoginInterceptor.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/interceptor/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/interceptor/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/interceptor/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/interceptor/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/model/MsgModel.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/model/PageModel.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/model/class-use/MsgModel.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/model/class-use/PageModel.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/model/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/model/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/model/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/model/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/persistence/DelegateMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/persistence/class-use/DelegateMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/persistence/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/persistence/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/persistence/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/persistence/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/support/BaseSupport.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/support/class-use/BaseSupport.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/support/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/support/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/support/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/core/support/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/controller/ProductController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/controller/class-use/ProductController.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/controller/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/controller/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/controller/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/controller/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/mapper/TbProductMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/mapper/class-use/TbProductMapper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/mapper/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/mapper/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/mapper/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/mapper/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/model/TbProduct.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/model/TbProductExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/model/TbProductExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/model/TbProductExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/model/TbProductExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/model/class-use/TbProduct.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/model/class-use/TbProductExample.Criteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/model/class-use/TbProductExample.Criterion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/model/class-use/TbProductExample.GeneratedCriteria.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/model/class-use/TbProductExample.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/model/package-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/model/package-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/model/package-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/com/swp/module/product/model/package-use.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/constant-values.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/deprecated-list.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/help-doc.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/index-all.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/javadoc.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/options" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/overview-frame.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/overview-summary.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/overview-tree.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/package-list" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/packages" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/script.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/serialized-form.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/stylesheet.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/adminMenu.xml" afterPath="$PROJECT_DIR$/src/main/resources/adminMenu.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/properties/log.properties" afterPath="$PROJECT_DIR$/src/main/resources/properties/log.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" afterPath="$PROJECT_DIR$/target/classes/logback.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/properties/log.properties" afterPath="$PROJECT_DIR$/target/classes/properties/log.properties" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/index_jsp.java" afterPath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/index_jsp.java" />
-      <change beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/login_jsp.java" afterPath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/login_jsp.java" />
+      <change beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/index_jsp.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/login_jsp.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,8 +337,8 @@
       <file leaf-file-name="LoggingController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/swp/commons/logging/controller/LoggingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="73" column="6" lean-forward="false" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+            <state relative-caret-position="159">
+              <caret line="67" column="80" lean-forward="true" selection-start-line="67" selection-start-column="80" selection-end-line="67" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1486#1487#0" expanded="true" />
@@ -76,14 +348,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/logging/manage.jsp">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="95" column="13" lean-forward="true" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+            <state relative-caret-position="60">
+              <caret line="130" column="51" lean-forward="true" selection-start-line="130" selection-start-column="51" selection-end-line="153" selection-end-column="21" />
               <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1536305004000" expanded="true" signature="14220:14226" ph="©" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2295">
+              <caret line="153" column="4" lean-forward="false" selection-start-line="153" selection-start-column="4" selection-end-line="153" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,6 +394,7 @@
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/resources/mybatis</dir>
+      <dir>$PROJECT_DIR$/src/main/webapp/resources</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -129,7 +412,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/swp/core/persistence/DelegateMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/swp/core/model/MsgModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/swp/core/controller/BaseController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
@@ -152,7 +434,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/template.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/index.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/index.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/common/include_common.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/common.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/swp/core/controller/ControllerSupport.java" />
@@ -177,9 +458,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/properties/log.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/adminMenu.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/controller/LoggingController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/logging/manage.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/adminMenu.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
       </list>
     </option>
   </component>
@@ -221,21 +504,14 @@
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
           <item name="jetty" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="swp-blog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="85" />
     <option name="y" value="23" />
-    <option name="width" value="1619" />
-    <option name="height" value="943" />
+    <option name="width" value="1535" />
+    <option name="height" value="971" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -319,115 +595,7 @@
               <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swp" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swp" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="logging" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swp" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="logging" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swp" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="logging" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swp" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="logging" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swp" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swp" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="logging" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
@@ -435,6 +603,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
@@ -452,27 +630,6 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="logging" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -792,7 +949,7 @@
       <workItem from="1536026134559" duration="20148000" />
       <workItem from="1536118128035" duration="15640000" />
       <workItem from="1536197505574" duration="9765000" />
-      <workItem from="1536282670117" duration="7419000" />
+      <workItem from="1536282670117" duration="11774000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1531149749898</created>
@@ -948,11 +1105,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536228618073</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Siwanper: 日志管理">
+      <created>1536292574895</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1536292574895</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262570000" />
+    <option name="totallyTimeSpent" value="266925000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -964,39 +1128,39 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="85" y="23" width="1619" height="943" extended-state="0" />
+    <frame x="0" y="23" width="1535" height="971" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2996595" sideWeight="0.50266314" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16919617" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284778" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2495935" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14415437" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2996595" sideWeight="0.50266314" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19137625" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3018868" sideWeight="0.4973369" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35045663" sideWeight="0.4973369" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24984147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2196919" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284778" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2495935" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14415437" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1054,7 +1218,8 @@
     <MESSAGE value="Siwanper: 角色管理" />
     <MESSAGE value="Siwanper: 用户管理" />
     <MESSAGE value="Siwanper: 用户角色管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="Siwanper: 用户角色管理" />
+    <MESSAGE value="Siwanper: 日志管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="Siwanper: 日志管理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1067,42 +1232,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9210">
-          <caret line="614" column="1" lean-forward="false" selection-start-line="614" selection-start-column="1" selection-end-line="614" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/404.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2.jar!/com/github/pagehelper/Page.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/config/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1222,23 +1355,6 @@
         <state relative-caret-position="360">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="153" column="4" lean-forward="false" selection-start-line="153" selection-start-column="4" selection-end-line="153" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="167" column="47" lean-forward="true" selection-start-line="167" selection-start-column="47" selection-end-line="167" selection-end-column="47" />
-          <folding>
-            <marker date="1534822043000" expanded="true" signature="14093:14099" ph="©" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1422,14 +1538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/adminMenu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/user/manage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -1457,10 +1565,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/logging/manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="95" column="13" lean-forward="true" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/javadocs/doc/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="264" column="61" lean-forward="true" selection-start-line="264" selection-start-column="61" selection-end-line="264" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/config/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-922">
+          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/adminMenu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/swp/commons/logging/controller/LoggingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="73" column="6" lean-forward="false" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+        <state relative-caret-position="159">
+          <caret line="67" column="80" lean-forward="true" selection-start-line="67" selection-start-column="80" selection-end-line="67" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1486#1487#0" expanded="true" />
@@ -1469,12 +1627,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/logging/manage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="95" column="13" lean-forward="true" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+        <state relative-caret-position="2295">
+          <caret line="153" column="4" lean-forward="false" selection-start-line="153" selection-start-column="4" selection-end-line="153" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="130" column="51" lean-forward="true" selection-start-line="130" selection-start-column="51" selection-end-line="153" selection-end-column="21" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1536305004000" expanded="true" signature="14220:14226" ph="©" />
           </folding>
         </state>
       </provider>

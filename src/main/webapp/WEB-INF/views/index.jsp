@@ -165,13 +165,17 @@
             <ul class="main-menu">
                 <li>
                     <a class="waves-effect"
-                       href="javascript:Tab.addTab('模版查看','${pageContext.request.contextPath}/common/personal/manage')">
+                       href="javascript:Tab.addTab('个人资料','${pageContext.request.contextPath}/commons/personal/manage')">
                         <i class="zmdi zmdi-account"></i>个人资料
                     </a>
+                </li>
+                <li>
                     <a class="waves-effect"
-                       href="javascript:Tab.addTab('模版查看','${pageContext.request.contextPath}/common/setting/manage')">
+                       href="javascript:Tab.addTab('系统设置','${pageContext.request.contextPath}/commons/setting/manage')">
                         <i class="zmdi zmdi-settings"></i>系统设置
                     </a>
+                </li>
+                <li>
                     <a class="waves-effect" href="javascript:logout()">
                         <i class="zmdi zmdi-run"></i>退出登录
                     </a>
@@ -298,21 +302,21 @@
 
     function logout() {
         $.confirm({
-            type:'grey',
-            animationSpeed:300,
-            title:false,
-            content:'您确认要退出系统吗?',
-            buttons:{
+            type: 'grey',
+            animationSpeed: 300,
+            title: false,
+            content: '您确认要退出系统吗?',
+            buttons: {
                 confirm: {
-                    text:'确认',
-                    btnClass:"waves-effect waves-button",
+                    text: '确认',
+                    btnClass: "waves-effect waves-button",
                     action: function () {
                         location.href = "${pageContext.request.contextPath}/common/login/signout";
                     }
                 },
-                cancel:{
-                    text:'取消',
-                    btnClass:'waves-effect waves-button'
+                cancel: {
+                    text: '取消',
+                    btnClass: 'waves-effect waves-button'
                 }
             }
         });
@@ -321,11 +325,11 @@
     function loadMenu(roleId) {
 
         var menuHtml = "<li><a class='waves-effect' href='javascript:Tab.addTab(\"首页\",\"home\");'><i class='zmdi zmdi-home'></i>首页</a></li>";
-        $.post("${pageContext.request.contextPath}/"+roleId+"/menu",null,function (data) {
-            $.each(data,function (index, item) {
-                menuHtml += "<li class='sub-menu system_menus'><a class='waves-effect' href='javascript:;'><i class='"+item.icon+"'></i>"+item.name+"</a><ul>";
-                $.each(item.children,function (idx,itm) {
-                    menuHtml += "<li><a class='waves-effect' href='javascript:Tab.addTab(\""+itm.name+"\",\"${pageContext.request.contextPath}"+itm.url+"\");'>"+itm.name+"</a></li>";
+        $.post("${pageContext.request.contextPath}/" + roleId + "/menu", null, function (data) {
+            $.each(data, function (index, item) {
+                menuHtml += "<li class='sub-menu system_menus'><a class='waves-effect' href='javascript:;'><i class='" + item.icon + "'></i>" + item.name + "</a><ul>";
+                $.each(item.children, function (idx, itm) {
+                    menuHtml += "<li><a class='waves-effect' href='javascript:Tab.addTab(\"" + itm.name + "\",\"${pageContext.request.contextPath}" + itm.url + "\");'>" + itm.name + "</a></li>";
                 })
                 menuHtml += "</ul></li>";
             })

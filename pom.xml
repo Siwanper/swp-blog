@@ -259,6 +259,16 @@
                 <version>1.3.6</version>
             </plugin>
 
+            <!-- 添加 maven-javadoc-plugin 插件（命令运行方式：进入工程目录执行：mvn javadoc:javadoc 生成javadoc） -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <reportOutputDirectory>/Users/ios/Documents/GitHub/swp-blog/src/main/webapp/resources/javadocs</reportOutputDirectory>
+                    <destDir>doc</destDir>
+                </configuration>
+            </plugin>
 
         </plugins>
 
