@@ -21,6 +21,7 @@
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/role/mapper/RoleMenuRelMapper.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/filter/LoginFilter.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/module/product/model/TbProductExample.java
+/Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/user/model/UserRoleRelExample.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/role/model/SysRoleExample.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/user/mapper/SysUserMapper.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/role/model/RoleMenuRel.java
@@ -29,6 +30,7 @@
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/login/model/LoginModel.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/menu/model/SysMenuExample.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/model/PageModel.java
+/Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/user/mapper/UserRoleRelMapper.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/interceptor/LoginInterceptor.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/index/controller/IndexController.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/role/controller/RoleController.java
@@ -38,3 +40,4 @@
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/index/model/MenuModel.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/user/controller/UserController.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/model/MsgModel.java
+/Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/user/model/UserRoleRel.java

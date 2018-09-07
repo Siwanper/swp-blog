@@ -11,19 +11,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15c502d6-7e6a-45a6-91a2-3a6adbe8039b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/user/mapper/UserRoleRelMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/user/model/UserRoleRel.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/user/model/UserRoleRelExample.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/common/user/UserRoleRelMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/controller/LoggingController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/mapper/LoggingEventExceptionMapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/mapper/LoggingEventMapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/mapper/LoggingEventPropertyMapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEvent.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEventExample.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEventException.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEventExceptionExample.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEventExceptionKey.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEventProperty.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEventPropertyExample.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/model/LoggingEventPropertyKey.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/common/logging/LoggingEventExceptionMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/common/logging/LoggingEventMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/common/logging/LoggingEventPropertyMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/logging/manage.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swp/commons/role/controller/RoleController.java" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/role/controller/RoleController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swp/commons/user/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/swp/commons/user/controller/UserController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/adminMenu.xml" afterPath="$PROJECT_DIR$/src/main/resources/adminMenu.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/common/role/SysRoleCustomMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/common/role/SysRoleCustomMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/user/addOrEdit.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/user/addOrEdit.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/user/manage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/user/manage.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/properties/log.properties" afterPath="$PROJECT_DIR$/src/main/resources/properties/log.properties" />
       <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" afterPath="$PROJECT_DIR$/target/classes/logback.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/properties/log.properties" afterPath="$PROJECT_DIR$/target/classes/properties/log.properties" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/index_jsp.java" afterPath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/index_jsp.java" />
       <change beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/login_jsp.java" afterPath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/login_jsp.java" />
     </list>
@@ -48,33 +61,29 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="LoggingController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/swp/commons/logging/controller/LoggingController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="73" column="6" lean-forward="false" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1486#1487#0" expanded="true" />
+                <element signature="e#1532#1533#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="manage.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/user/manage.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/logging/manage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="113" column="119" lean-forward="false" selection-start-line="113" selection-start-column="119" selection-end-line="113" selection-end-column="119" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addOrEdit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/role/addOrEdit.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="237" column="34" lean-forward="true" selection-start-line="236" selection-start-column="16" selection-end-line="237" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/swp/commons/user/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="145" column="58" lean-forward="false" selection-start-line="145" selection-start-column="52" selection-end-line="145" selection-end-column="58" />
-              <folding />
+            <state relative-caret-position="350">
+              <caret line="95" column="13" lean-forward="true" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,16 +129,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/swp/core/injector/MapperInjector.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/swp/commons/login/model/LoginModel.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/swp/core/persistence/DelegateMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/swp/core/model/MsgModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/swp/core/controller/BaseController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/swp/core/annotation/MapperInject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/swp/core/annotation/LogInject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/swp/core/injector/LogInjector.java" />
@@ -168,9 +172,14 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/user/addOrEdit.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/swp/commons/role/controller/RoleController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/common/role/SysRoleCustomMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/swp/commons/user/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/user/manage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/properties/log.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/adminMenu.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/swp/commons/logging/controller/LoggingController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/logging/manage.jsp" />
       </list>
     </option>
   </component>
@@ -210,6 +219,12 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="swp-blog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="jetty" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="swp-blog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
           <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
       </expand>
@@ -217,10 +232,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
+    <option name="x" value="85" />
     <option name="y" value="23" />
-    <option name="width" value="1670" />
-    <option name="height" value="972" />
+    <option name="width" value="1619" />
+    <option name="height" value="943" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -271,7 +286,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
@@ -324,6 +339,49 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="swp" type="462c0819:PsiDirectoryNode" />
               <item name="commons" type="462c0819:PsiDirectoryNode" />
+              <item name="logging" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="swp" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
+              <item name="logging" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="swp" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
+              <item name="logging" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="swp" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
+              <item name="logging" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="swp" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -342,28 +400,6 @@
               <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swp" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="swp" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -391,7 +427,7 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="logging" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
@@ -436,35 +472,13 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="role" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swp-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swp-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="logging" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -777,7 +791,8 @@
       <workItem from="1535939580544" duration="15113000" />
       <workItem from="1536026134559" duration="20148000" />
       <workItem from="1536118128035" duration="15640000" />
-      <workItem from="1536197505574" duration="9707000" />
+      <workItem from="1536197505574" duration="9765000" />
+      <workItem from="1536282670117" duration="7419000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1531149749898</created>
@@ -926,11 +941,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536141993539</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Siwanper: 用户角色管理">
+      <created>1536228618073</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1536228618073</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255093000" />
+    <option name="totallyTimeSpent" value="262570000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -942,40 +964,39 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="23" width="1670" height="972" extended-state="0" />
-    <editor active="true" />
+    <frame x="85" y="23" width="1619" height="943" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2996595" sideWeight="0.50266314" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19164619" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284778" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2495935" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14415437" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1972634" sideWeight="0.4973369" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2996595" sideWeight="0.50266314" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19137625" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3018868" sideWeight="0.4973369" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27149877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24984147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284778" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2495935" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14415437" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1032,7 +1053,8 @@
     <MESSAGE value="Siwanper: 角色操作" />
     <MESSAGE value="Siwanper: 角色管理" />
     <MESSAGE value="Siwanper: 用户管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="Siwanper: 用户管理" />
+    <MESSAGE value="Siwanper: 用户角色管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="Siwanper: 用户角色管理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1045,43 +1067,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/template.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/template.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="204" column="68" lean-forward="false" selection-start-line="204" selection-start-column="68" selection-end-line="204" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9210">
@@ -1160,24 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <marker date="1535343393000" expanded="true" signature="4918:5031" ph="select from SYS_ROLE" />
-            <marker date="1535343393000" expanded="true" signature="5313:5380" ph="delete from SYS_ROLE... " />
-            <marker date="1535343393000" expanded="true" signature="5684:5704" ph="delete from SYS_ROLE... " />
-            <marker date="1535343393000" expanded="true" signature="6084:6428" ph="insert into SYS_ROLE... " />
-            <marker date="1535343393000" expanded="true" signature="8266:8295" ph="select count... SYS_ROLE" />
-            <marker date="1535343393000" expanded="true" signature="9839:10236" ph="update SYS_ROLE... " />
-            <marker date="1535343393000" expanded="true" signature="10647:11314" ph="update SYS_ROLE... " />
-            <marker date="1535343393000" expanded="true" signature="11614:11965" ph="update SYS_ROLE... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/adminMenu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1335,13 +1302,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/swp/core/controller/ControllerSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="84" column="24" lean-forward="false" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/plugins/bootstrap-table-1.11.1-dist/bootstrap-table.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -1412,14 +1372,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="25" column="70" lean-forward="false" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
-          <folding>
-            <marker date="1536226554000" expanded="true" signature="1632:1875" ph="SELECT ROLE_... SYS_ROLE" />
-            <marker date="1536226554000" expanded="true" signature="1999:2718" ph="SELECT T.* F... ROLE_ID" />
-            <marker date="1536226554000" expanded="true" signature="2025:2321" ph="SELECT ROLE_... SYS_ROLE" />
-            <marker date="1536226554000" expanded="true" signature="2261:2320" ph="SELECT ROLE_... USER_ROLE_REL" />
-            <marker date="1536226554000" expanded="true" signature="2344:2645" ph="SELECT ROLE_... SYS_ROLE" />
-            <marker date="1536226554000" expanded="true" signature="2585:2644" ph="SELECT ROLE_... USER_ROLE_REL" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1427,39 +1379,103 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/role/addOrEdit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3555">
+          <caret line="237" column="34" lean-forward="false" selection-start-line="236" selection-start-column="16" selection-end-line="237" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/log.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="50" lean-forward="true" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2835">
+          <caret line="189" column="22" lean-forward="true" selection-start-line="189" selection-start-column="22" selection-end-line="189" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="51" column="50" lean-forward="false" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+        <state relative-caret-position="547">
+          <caret line="51" column="58" lean-forward="false" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/swp/commons/user/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/adminMenu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="145" column="58" lean-forward="false" selection-start-line="145" selection-start-column="52" selection-end-line="145" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/role/addOrEdit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="237" column="34" lean-forward="true" selection-start-line="236" selection-start-column="16" selection-end-line="237" selection-end-column="34" />
+        <state relative-caret-position="405">
+          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/user/manage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="113" column="119" lean-forward="false" selection-start-line="113" selection-start-column="119" selection-end-line="113" selection-end-column="119" />
+        <state relative-caret-position="78">
+          <caret line="78" column="24" lean-forward="true" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/swp/core/controller/ControllerSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="72" column="11" lean-forward="true" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="44" />
+          <folding>
+            <element signature="e#1473#1474#0" expanded="false" />
+            <element signature="e#1524#1525#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/swp/commons/user/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="62" column="20" lean-forward="false" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/swp/commons/logging/controller/LoggingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="73" column="6" lean-forward="false" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1486#1487#0" expanded="true" />
+            <element signature="e#1532#1533#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/common/logging/manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="95" column="13" lean-forward="true" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

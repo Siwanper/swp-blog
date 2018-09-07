@@ -6,10 +6,10 @@
             <name>用户管理</name>
             <url>/commons/user/manage</url>
         </menuItem>
-        <menuItem>
-            <name>权限管理</name>
-            <url>/commons/permission/manage</url>
-        </menuItem>
+        <!--<menuItem>-->
+            <!--<name>权限管理</name>-->
+            <!--<url>/commons/permission/manage</url>-->
+        <!--</menuItem>-->
     </menu>
     <menu name="角色和资源管理" icon="zmdi zmdi-lock-outline">
         <menuItem>
