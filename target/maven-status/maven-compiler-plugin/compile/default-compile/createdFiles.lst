@@ -38,6 +38,7 @@ com/swp/commons/index/model/MenuModel.class
 com/swp/commons/logging/mapper/LoggingEventExceptionMapper.class
 com/swp/commons/logging/model/LoggingEventException.class
 com/swp/commons/logging/mapper/LoggingEventPropertyMapper.class
+com/swp/commons/setting/controller/SettingController.class
 com/swp/commons/user/model/SysUserExample$GeneratedCriteria.class
 com/swp/commons/user/mapper/SysUserMapper.class
 com/swp/core/aspect/LogAspect.class
