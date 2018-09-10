@@ -4,6 +4,7 @@
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/user/model/SysUserKey.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/user/model/SysUserExample.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/logging/model/LoggingEventExceptionKey.java
+/Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/setting/controller/SettingController.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/user/model/SysUser.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/controller/BaseController.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/module/product/mapper/TbProductMapper.java
@@ -14,6 +15,7 @@
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/role/model/SysRoleExample.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/role/model/RoleMenuRel.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/login/model/LoginModel.java
+/Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/ehcache/EhCacheTestService.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/menu/model/SysMenuExample.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/interceptor/LoginInterceptor.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/index/controller/IndexController.java
@@ -37,6 +39,7 @@
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/menu/model/SysMenu.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/module/product/model/TbProduct.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/annotation/MapperInject.java
+/Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/shiro/ShiroRealm.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/logging/mapper/LoggingEventMapper.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/filter/LoginFilter.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/module/product/model/TbProductExample.java

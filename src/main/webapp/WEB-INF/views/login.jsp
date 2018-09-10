@@ -62,7 +62,7 @@
         // 登陆时间
         $("#login-bt").click(function(){
            $.post(
-               "${pageContext.request.contextPath}/common/login/signin",
+               "${pageContext.request.contextPath}/commons/login/signin",
                {
                    username : $("#username").val(),
                    password : $("#password").val(),

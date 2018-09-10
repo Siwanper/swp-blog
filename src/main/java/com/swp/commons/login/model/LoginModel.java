@@ -25,9 +25,15 @@ public class LoginModel implements Serializable {
      */
     private boolean remember;
 
-    public LoginModel(int status, String msg, String url, boolean remember) {
+    public LoginModel(int status, String msg) {
+        super();
         this.status = status;
         this.msg = msg;
+    }
+
+    public LoginModel(int status, String url, boolean remember) {
+        super();
+        this.status = status;
         this.url = url;
         this.remember = remember;
     }

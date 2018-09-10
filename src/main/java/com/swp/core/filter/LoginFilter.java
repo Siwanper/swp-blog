@@ -20,6 +20,7 @@ import java.io.IOException;
  * @Version: 1.0
  * <p>Copyright: Copyright (c) 2018</p>
  */
+@Deprecated
 public class LoginFilter implements Filter {
 
     private static final Logger logger = LoggerFactory.getLogger(LoginFilter.class);

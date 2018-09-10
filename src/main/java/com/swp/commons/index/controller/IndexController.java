@@ -1,5 +1,6 @@
 package com.swp.commons.index.controller;
 
+import com.swp.commons.ehcache.EhCacheTestService;
 import com.swp.commons.index.model.MenuModel;
 import com.swp.core.annotation.LogInject;
 import com.swp.core.annotation.MapperInject;
@@ -10,6 +11,7 @@ import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,6 +40,9 @@ public class IndexController extends BaseController {
 
     @MapperInject
     private DelegateMapper mapper;
+
+    @Autowired
+    private EhCacheTestService testService;
 
     /**
      * 跳转到登录页面，如果用户已经登录跳转到首页
@@ -74,7 +79,7 @@ public class IndexController extends BaseController {
      * @return
      */
     @RequestMapping("/template")
-    public String template() {
+    public String template() throws InterruptedException {
         return "template";
     }
 

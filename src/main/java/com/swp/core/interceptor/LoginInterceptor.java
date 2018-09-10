@@ -20,6 +20,7 @@ import java.io.PrintWriter;
  * @Version: 1.0
  * <p>Copyright: Copyright (c) 2018</p>
  */
+@Deprecated
 public class LoginInterceptor implements HandlerInterceptor {
 
     private static final Logger logger = LoggerFactory.getLogger(LoginInterceptor.class);

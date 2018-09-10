@@ -311,7 +311,7 @@
                     text: '确认',
                     btnClass: "waves-effect waves-button",
                     action: function () {
-                        location.href = "${pageContext.request.contextPath}/common/login/signout";
+                        location.href = "${pageContext.request.contextPath}/commons/login/signout";
                     }
                 },
                 cancel: {

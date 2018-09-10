@@ -65,7 +65,7 @@
 
     </bean>
 
-    <!-- 配置 Login 登录拦截器 -->
+    <!-- 配置 Login 登录拦截器 (改为shiro安全认证)
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
@@ -73,6 +73,7 @@
             <bean class="com.swp.core.interceptor.LoginInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
+    -->
 
     <!-- 配置spring静态资源文件 两种方案 -->
     <!-- 一、将静态资源的处理经由Spring MVC框架交会Web应用服务器默认的defaultServlet处理-->
