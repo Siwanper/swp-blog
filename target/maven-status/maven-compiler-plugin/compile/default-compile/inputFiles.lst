@@ -14,9 +14,11 @@
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/user/model/UserRoleRelExample.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/role/model/SysRoleExample.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/role/model/RoleMenuRel.java
+/Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/aspect/DataSourceAspect.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/login/model/LoginModel.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/ehcache/EhCacheTestService.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/menu/model/SysMenuExample.java
+/Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/annotation/DynamicDataSource.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/interceptor/LoginInterceptor.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/index/controller/IndexController.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/injector/MapperInjector.java
@@ -55,4 +57,6 @@
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/logging/mapper/LoggingEventExceptionMapper.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/commons/role/controller/RoleController.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/module/product/controller/ProductController.java
+/Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/dataSource/DataSourceContextHolder.java
 /Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/model/MsgModel.java
+/Users/ios/Documents/GitHub/swp-blog/src/main/java/com/swp/core/constant/DataSourceName.java

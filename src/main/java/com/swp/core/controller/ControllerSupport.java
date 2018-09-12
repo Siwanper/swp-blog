@@ -1,6 +1,7 @@
 package com.swp.core.controller;
 
 import com.github.pagehelper.PageHelper;
+import com.swp.core.dataSource.DataSourceContextHolder;
 import com.swp.core.model.MsgModel;
 import com.swp.core.model.PageModel;
 import com.swp.core.persistence.DelegateMapper;
@@ -8,6 +9,7 @@ import com.swp.core.support.BaseSupport;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.xml.crypto.Data;
 import java.util.List;
 
 /**
@@ -52,7 +54,7 @@ public class ControllerSupport extends BaseSupport{
      * @param datasource
      */
     protected void setDataSource(String datasource){
-
+        DataSourceContextHolder.setDataSource(datasource);
     }
 
     /**
@@ -60,7 +62,7 @@ public class ControllerSupport extends BaseSupport{
      *
      */
     protected void clearDataSource(){
-
+        DataSourceContextHolder.clearDataSource();
     }
 
     /**

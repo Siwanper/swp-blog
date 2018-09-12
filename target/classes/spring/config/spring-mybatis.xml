@@ -8,7 +8,21 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 
     <!-- 1.配置数据源 -->
-    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+    <!--
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="username" value="${default.db.username}" />
+        <property name="password" value="${default.db.password}" />
+        <property name="driverClassName" value="${default.db.driverClassName}" />
+        <property name="url" value="${default.db.url}" />
+
+        <property name="initialSize" value="${db.initialSize}" />
+        <property name="minIdle" value="${db.minIdle}" />
+        <property name="maxActive" value="${db.maxActive}" />
+    </bean>
+    -->
+    <!-- 配置 druid 多个数据源（默认数据源） -->
+    <bean id="defaultDataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <!-- 基本属性 url、user、password、driverClass -->
         <property name="username" value="${default.db.username}" />
         <property name="password" value="${default.db.password}" />
         <property name="driverClassName" value="${default.db.driverClassName}" />
@@ -18,6 +32,66 @@
         <property name="initialSize" value="${db.initialSize}" />
         <property name="minIdle" value="${db.minIdle}" />
         <property name="maxActive" value="${db.maxActive}" />
+
+        <!-- 配置获取连接等待超时的时间 -->
+        <property name="maxWait" value="${db.maxWait}" />
+
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="${db.timeBetweenEvictionRunsMillis}" />
+
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="${db.minEvictableIdleTimeMillis}" />
+
+        <property name="validationQuery" value="${db.validationQuery}" />
+        <property name="testWhileIdle" value="${db.testWhileIdle}" />
+        <property name="testOnBorrow" value="${db.testOnBorrow}" />
+        <property name="testOnReturn" value="${db.testOnReturn}" />
+
+        <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+        <property name="poolPreparedStatements" value="${db.poolPreparedStatements}" />
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="${db.maxPoolPreparedStatementPerConnectionSize}" />
+
+        <!-- 监控功能 -->
+        <property name="filters" value="${db.filters}" />
+    </bean>
+
+    <!-- 配置 druid 多个数据源（扩展数据源） -->
+    <bean id="extendDataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="username" value="${extend.db.username}" />
+        <property name="password" value="${extend.db.password}" />
+        <property name="driverClassName" value="${extend.db.driverClassName}" />
+        <property name="url" value="${extend.db.url}" />
+
+        <property name="initialSize" value="${db.initialSize}" />
+        <property name="minIdle" value="${db.minIdle}" />
+        <property name="maxActive" value="${db.maxActive}" />
+
+        <property name="maxWait" value="${db.maxWait}" />
+
+        <property name="timeBetweenEvictionRunsMillis" value="${db.timeBetweenEvictionRunsMillis}" />
+
+        <property name="minEvictableIdleTimeMillis" value="${db.minEvictableIdleTimeMillis}" />
+
+        <property name="validationQuery" value="${db.validationQuery}" />
+        <property name="testWhileIdle" value="${db.testWhileIdle}" />
+        <property name="testOnBorrow" value="${db.testOnBorrow}" />
+        <property name="testOnReturn" value="${db.testOnReturn}" />
+
+        <property name="poolPreparedStatements" value="${db.poolPreparedStatements}" />
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="${db.maxPoolPreparedStatementPerConnectionSize}" />
+
+        <property name="filters" value="${db.filters}" />
+    </bean>
+
+    <!-- 动态数据源（多个数据源） -->
+    <bean id="dataSource" class="com.swp.core.dataSource.DataSourceContextHolder">
+        <property name="targetDataSources">
+            <map key-type="java.lang.String">
+                <entry key="defaultDataSource" value-ref="defaultDataSource" />
+                <entry key="extendDataSource" value-ref="extendDataSource" />
+            </map>
+        </property>
+        <property name="defaultTargetDataSource" ref="defaultDataSource" />
     </bean>
 
     <!-- 2.SqlSessionFactory -->
@@ -49,6 +123,9 @@
         <constructor-arg ref="sqlSessionFactory"/>
     </bean>
 
+    <!-- Yan 配置切换数据源 aop 切面 -->
+    <bean id="dataSourceExchange" class="com.swp.core.aspect.DataSourceAspect"/>
+
     <!-- 扫描Mapper -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.swp" />
@@ -69,8 +146,10 @@
     </tx:advice>
 
     <aop:config>
-        <aop:pointcut id="pointCut" expression="execution(* com.swp..*.controller.*.*(..))"/>
-        <aop:advisor advice-ref="txAdvice" pointcut-ref="pointCut"/>
+        <aop:pointcut expression="execution(* com.swp..*.controller.*.*(..))" id="dataSourcePointCut" />
+        <aop:pointcut expression="execution(* com.swp..*.mapper.*(..))" id="pointCut" />
+        <aop:advisor advice-ref="dataSourceExchange" pointcut-ref="dataSourcePointCut" order="1"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pointCut" order="2" />
     </aop:config>
 
     <tx:annotation-driven transaction-manager="transactionManager"/>
